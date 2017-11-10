@@ -14,6 +14,7 @@
     <link type="text/css" rel="stylesheet" href="css/animate.min.css"><!-- Animation -->
     <link type="text/css" rel="stylesheet" href="css/flexslider.css"><!-- FlexSlider CSS -->
     <link type="text/css" rel="stylesheet" href="css/datepicker.css"><!-- FlexSlider CSS -->
+	<link href="http://code.jquery.com/ui/1.8.24/themes/blitzer/jquery-ui.css" rel="stylesheet" type="text/css" />
     <link type="text/css" rel="stylesheet" href="css/style.css"><!-- Light Theme Core CSS -->
     <link type="text/css" rel="stylesheet" href="css/custom.css"><!-- Light Theme Core CSS -->
     <!-- Google Fonts here -->
@@ -70,7 +71,7 @@
                      <li><a href="employerlogin.html" class="button-medium"><i class="fa fa-group"></i>&nbsp;&nbsp;Employer Login</a></li>
 				</ul>
 			</div> -->
-			<div class="col-md-3 col-lg-2 hidden-sm col-xs-12 hidden-xs">
+			<div class="col-md-3 col-lg-2 hidden-sm hidden-xs">
 			<ul class="nav navbar-nav pull-right profile-settings">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -83,7 +84,7 @@
                             <div class="navbar-login">
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12">
-                                        <p class="text-left maincolor username"><strong>John Stevenson</strong></p>
+                                        <p class="text-left maincolor"><strong>John Stevenson</strong></p>
                                         <p class="text-left small">xyz@abc.com</p>
 										<p class="divider"></p>
                                         <a href="candidateprofile.html" class="pull-left maincolor"><strong>Edit Profile</strong></a>
@@ -144,7 +145,6 @@
                         </ul>
 			</div>
             <!-- End:Mobile Navigation -->
-            <!-- End:Mobile Navigation -->
         
         </div>
     </header>
@@ -159,7 +159,7 @@
 		<div class="static-banner" style="background:url(img/banner-1.jpg) bottom center no-repeat fixed; background-size:cover;">
         	<div class="mask">
             	<div class="container">
-                	<h3 class="text-center">Create Visual Resume</h3>
+                	<h3 class="text-center">Pricing & Plans</h3>
             	</div>
             </div>
         </div>
@@ -168,69 +168,106 @@
     <!-- =================================================
     Banner Area End -->
     
-    
     <!-- Content Area Start 
     ====================================================== -->
     <section class="content-area-sec">
     	<!-- Start:Login/Register Area-->
     	<div class="container">
-			<div class="col-md-8 col-md-offset-2 col-lg-offset-2 col-lg-8 col-sm-12 col-xs-12">
-				<div class="createvisualresume">
-					<form>
-                    	<!-- Start:Form  Area -->
-                        <div class="form-area">
-							<div class="col-md-6">
-								<label>Name</label>
-								<input type="text"  class="text-field-box normal borderd smoke-white">
+			<div class="col-md-12">
+				<div class="pricing">
+					<div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+						<div class="starterpack">
+							<div class="starter-header">
+								<p class="left-content"><strong>Starter Pack</strong></p>
+								<p class="right-content"><strong>$42</strong>&nbsp;<small>/&nbsp;per month</small></p>
 							</div>
-							<div class="col-md-6">
-								<label>School (Major)</label>
-								<input type="text"  class="text-field-box normal borderd smoke-white" placeholder="#Stanford, #Computer science">
-							</div>
-							<div class="col-md-6">
-								<label>Location</label>
-								<input type="text"  class="text-field-box normal borderd smoke-white" placeholder="#California">
-							</div>
-							<div class="col-md-6">
-								<label>Current Company (if applicable)</label>
-								<input type="text"  class="text-field-box normal borderd smoke-white" placeholder="#Google">
-							</div>
-							<div class="col-md-6">
-								<label>Skill set</label>
-								<input type="text"  class="text-field-box normal borderd smoke-white" placeholder="#java, #PHP">
-							</div>
-							<div class="col-md-6">
-								<label>Yrs of Experience</label>
-								<input type="text"  class="text-field-box normal borderd smoke-white" placeholder="#5yrs">
-							</div>
-							<div class="col-md-6">
-								<label>Target Industry</label>
-								<input type="text"  class="text-field-box normal borderd smoke-white" placeholder="#fintech">
-							</div>
-							<div class="col-md-6">
-								<label>License (if you have)</label>
-								<input type="text"  class="text-field-box normal borderd smoke-white" placeholder="#Ny bar, #2010">
-							</div>
-							<div class="col-md-6">
-								<label>Friends/Family member IDs</label>
-								<input type="text"  class="text-field-box normal borderd smoke-white">
-							</div>
-							<div class="col-md-6">
-								<label>Resume file<span>(optional)</span></label>
-								<div class="custom-file-upload">
-									<input type="file" id="file" name="myfiles[]" multiple  readonly/>
-								</div>
-							</div>
-							<div class="col-md-12 text-center center-block">
-								<button type="submit" class="button-normal">Submit</button>
-							</div>
+							<hr class="hr-starter">
+							<ul>
+								<li class="enabled"><i class="fa fa-check-circle-o"></i>1 Month Subscription</li>
+								<li class="enabled"><i class="fa fa-check-circle-o"></i>Feature 2</li>
+								<li class="enabled"><i class="fa fa-check-circle-o"></i>Feature 3</li>
+								<li class="disabled"><i class="fa fa-check-circle-o"></i>Feature 4</li>
+								<li class="disabled"><i class="fa fa-times-circle-o"></i>Feature 5</li>
+								<li class="disabled"><i class="fa fa-times-circle-o"></i>Feature 6</li>
+								<li class="disabled"><i class="fa fa-times-circle-o"></i>Feature 7</li>
+								<li class="disabled"><i class="fa fa-times-circle-o"></i>Feature 8</li>
+								<li class="disabled"><i class="fa fa-times-circle-o"></i>Feature 9</li>
+							</ul>
+							<button type="submit" onclick="window.location.href='paymentinfo.html';" class="center-block">Choose Plan</button>
 						</div>
-				</form>
+					</div>
+					<div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 nopaddingleft nopaddingright">
+						<div class="professionalpack">
+							<div class="professional-header">
+								<div class="bestpack">
+									<span>Best Deal</span>
+								</div>
+								<p class="left-content"><strong>Professional Pack</strong></p>
+								<p class="right-content"><strong>$73</strong>&nbsp;<small>/&nbsp;per month</small></p>
+							</div>
+							<hr class="hr-professional">
+							<ul>
+								<li class="enabled"><i class="fa fa-check-circle-o"></i>6 Months Subscription</li>
+								<li class="enabled"><i class="fa fa-check-circle-o"></i>Feature 2</li>
+								<li class="enabled"><i class="fa fa-check-circle-o"></i>Feature 3</li>
+								<li class="enabled"><i class="fa fa-check-circle-o"></i>Feature 4</li>
+								<li class="enabled"><i class="fa fa-check-circle-o"></i>Feature 5</li>
+								<li class="disabled"><i class="fa fa-times-circle-o"></i>Feature 6</li>
+								<li class="disabled"><i class="fa fa-times-circle-o"></i>Feature 7</li>
+								<li class="disabled"><i class="fa fa-times-circle-o"></i>Feature 8</li>
+								<li class="disabled"><i class="fa fa-times-circle-o"></i>Feature 9</li>
+							</ul>
+							<button type="submit" onclick="window.location.href='paymentinfo.html';" class="center-block">Choose Plan</button>
+						</div>
+					</div>
+					<div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+						<div class="enterprisepack">
+							<div class="enterprise-header">
+								<p class="left-content"><strong>Enterprise Pack</strong></p>
+								<p class="right-content"><strong>$117</strong>&nbsp;<small>/&nbsp;per month</small></p>
+							</div>
+							<hr class="hr-enterprise">
+							<ul>
+								<li class="enabled"><i class="fa fa-check-circle-o"></i>1 Year Subscription</li>
+								<li class="enabled"><i class="fa fa-check-circle-o"></i>Feature 2</li>
+								<li class="enabled"><i class="fa fa-check-circle-o"></i>Feature 3</li>
+								<li class="enabled"><i class="fa fa-check-circle-o"></i>Feature 4</li>
+								<li class="enabled"><i class="fa fa-check-circle-o"></i>Feature 5</li>
+								<li class="enabled"><i class="fa fa-check-circle-o"></i>Feature 6</li>
+								<li class="disabled"><i class="fa fa-times-circle-o"></i>Feature 7</li>
+								<li class="disabled"><i class="fa fa-times-circle-o"></i>Feature 8</li>
+								<li class="disabled"><i class="fa fa-times-circle-o"></i>Feature 9</li>
+							</ul>
+							<button type="submit" onclick="window.location.href='paymentinfo.html';" class="center-block">Choose Plan</button>
+						</div>
+					</div>
+					<div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+						<div class="enterprisepack">
+							<div class="enterprise-header">
+								<p class="left-content"><strong>Premium Pack</strong></p>
+								<p class="right-content"><strong>$169</strong>&nbsp;<small>/&nbsp;per month</small></p>
+							</div>
+							<hr class="hr-enterprise">
+							<ul>
+								<li class="enabled"><i class="fa fa-check-circle-o"></i>1 Year Subscription</li>
+								<li class="enabled"><i class="fa fa-check-circle-o"></i>Feature 2</li>
+								<li class="enabled"><i class="fa fa-check-circle-o"></i>Feature 3</li>
+								<li class="enabled"><i class="fa fa-check-circle-o"></i>Feature 4</li>
+								<li class="enabled"><i class="fa fa-check-circle-o"></i>Feature 5</li>
+								<li class="enabled"><i class="fa fa-check-circle-o"></i>Feature 6</li>
+								<li class="enabled"><i class="fa fa-check-circle-o"></i>Feature 7</li>
+								<li class="enabled"><i class="fa fa-check-circle-o"></i>Feature 8</li>
+								<li class="enabled"><i class="fa fa-check-circle-o"></i>Feature 9</li>
+							</ul>
+							<button type="submit" class="center-block">Choose Plan</button>
+						</div>
+					</div>
 				</div>
 			</div>
         </div>     
 		<!-- End:Login/Register Area-->
     </section>
+	
     <!-- =================================================
     Content Area End -->
     
@@ -247,8 +284,8 @@
     </footer>
     <!-- =================================================
     Footer Area End -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-    <script type="text/javascript" src="js/owl.carousel.js"></script><!-- Owl Carousel Js -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>    
+	<script type="text/javascript" src="js/owl.carousel.js"></script><!-- Owl Carousel Js -->
     <script type="text/javascript" src="js/owl-carousel-settings.js"></script><!-- Owl Carousel Settings Js -->
     <script type="text/javascript" src="js/jquery.flexslider.js"></script><!-- Flexslider Settings Js -->
 	<script type="text/javascript" src="js/mini-grid.js"></script><!-- Mini Master Grid Js -->
@@ -258,136 +295,32 @@
     <script type="text/javascript" src="js/forms.js"></script><!-- Form Js -->
     <script type="text/javascript" src="js/animation.js" ></script><!-- Animation Js -->
     <script type="text/javascript" src="js/bootstrap-datepicker.js" ></script><!-- Animation Js -->
-    <script>
-		//Reference: 
-//https://www.onextrapixel.com/2012/12/10/how-to-create-a-custom-file-input-with-jquery-css3-and-php/
-;(function($) {
-
-		  // Browser supports HTML5 multiple file?
-		  var multipleSupport = typeof $('<input/>')[0].multiple !== 'undefined',
-		      isIE = /msie/i.test( navigator.userAgent );
-
-		  $.fn.customFile = function() {
-
-		    return this.each(function() {
-
-		      var $file = $(this).addClass('custom-file-upload-hidden'), // the original file input
-		          $wrap = $('<div class="file-upload-wrapper">'),
-		          $input = $('<input type="text" class="file-upload-input" />'),
-		          // Button that will be used in non-IE browsers
-		          $button = $('<button type="button" class="file-upload-button">Select a File</button>'),
-		          // Hack for IE
-		          $label = $('<label class="file-upload-button" for="'+ $file[0].id +'">Select a File</label>');
-
-		      // Hide by shifting to the left so we
-		      // can still trigger events
-		      $file.css({
-		        position: 'absolute',
-		        left: '-9999px'
-		      });
-
-		      $wrap.insertAfter( $file )
-		        .append( $file, $input, ( isIE ? $label : $button ) );
-
-		      // Prevent focus
-		      $file.attr('tabIndex', -1);
-		      $button.attr('tabIndex', -1);
-
-		      $button.click(function () {
-		        $file.focus().click(); // Open dialog
-		      });
-
-		      $file.change(function() {
-
-		        var files = [], fileArr, filename;
-
-		        // If multiple is supported then extract
-		        // all filenames from the file array
-		        if ( multipleSupport ) {
-		          fileArr = $file[0].files;
-		          for ( var i = 0, len = fileArr.length; i < len; i++ ) {
-		            files.push( fileArr[i].name );
-		          }
-		          filename = files.join(', ');
-
-		        // If not supported then just take the value
-		        // and remove the path to just show the filename
-		        } else {
-		          filename = $file.val().split('\\').pop();
-		        }
-
-		        $input.val( filename ) // Set the value
-		          .attr('title', filename) // Show filename in title tootlip
-		          .focus(); // Regain focus
-
-		      });
-
-		      $input.on({
-		        blur: function() { $file.trigger('blur'); },
-		        keydown: function( e ) {
-		          if ( e.which === 13 ) { // Enter
-		            if ( !isIE ) { $file.trigger('click'); }
-		          } else if ( e.which === 8 || e.which === 46 ) { // Backspace & Del
-		            // On some browsers the value is read-only
-		            // with this trick we remove the old input and add
-		            // a clean clone with all the original events attached
-		            $file.replaceWith( $file = $file.clone( true ) );
-		            $file.trigger('change');
-		            $input.val('');
-		          } else if ( e.which === 9 ){ // TAB
-		            return;
-		          } else { // All other keys
-		            return false;
-		          }
-		        }
-		      });
-
-		    });
-
-		  };
-
-		  // Old browser fallback
-		  if ( !multipleSupport ) {
-		    $( document ).on('change', 'input.customfile', function() {
-
-		      var $this = $(this),
-		          // Create a unique ID so we
-		          // can attach the label to the input
-		          uniqId = 'customfile_'+ (new Date()).getTime(),
-		          $wrap = $this.parent(),
-
-		          // Filter empty input
-		          $inputs = $wrap.siblings().find('.file-upload-input')
-		            .filter(function(){ return !this.value }),
-
-		          $file = $('<input type="file" id="'+ uniqId +'" name="'+ $this.attr('name') +'"/>');
-
-		      // 1ms timeout so it runs after all other events
-		      // that modify the value have triggered
-		      setTimeout(function() {
-		        // Add a new input
-		        if ( $this.val() ) {
-		          // Check for empty fields to prevent
-		          // creating new inputs when changing files
-		          if ( !$inputs.length ) {
-		            $wrap.after( $file );
-		            $file.customFile();
-		          }
-		        // Remove and reorganize inputs
-		        } else {
-		          $inputs.parent().remove();
-		          // Move the input so it's always last on the list
-		          $wrap.appendTo( $wrap.parent() );
-		          $wrap.find('input').focus();
-		        }
-		      }, 1);
-
-		    });
-		  }
-
-}(jQuery));
-
-$('input[type=file]').customFile();
+    <script src="https://code.jquery.com/ui/1.8.24/jquery-ui.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	$(function () {
+		$("#dvSource .dummyclass").draggable({
+			revert: "invalid",
+			refreshPositions: true,
+			drag: function (event, ui) {
+				ui.helper.addClass("draggable");
+			},
+			<!-- stop: function (event, ui) { -->
+				<!-- ui.helper.removeClass("draggable"); -->
+				<!-- var image = this.src.split("/")[this.src.split("/").length - 1]; -->
+			<!-- } -->
+		});
+		$("#dvDest").droppable({
+			drop: function (event, ui) {
+				if ($("#dvDest").length == 0) {
+					$("#dvDest").html("");
+				}
+				ui.draggable.addClass("dropped");
+				$("#dvDest").append(ui.draggable);
+				$("#dvDest span").hide();
+				$("#dvDest").addClass('padding10');
+			}
+		});
+	});
 	</script>
 </body>
 </html>

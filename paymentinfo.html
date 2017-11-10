@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Vizoome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Vizoome - Visual Resume">
+    <meta name="keywords" content="Vizoome Home, Vizoome, vizoomehome">
+    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Core CSS -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css"><!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.css"><!-- font-awesome -->
+    <link type="text/css" rel="stylesheet" href="css/animate.min.css"><!-- Animation -->
+    <link type="text/css" rel="stylesheet" href="css/flexslider.css"><!-- FlexSlider CSS -->
+    <link type="text/css" rel="stylesheet" href="css/style.css"><!-- Light Theme Core CSS -->
+    <link type="text/css" rel="stylesheet" href="css/custom.css"><!-- Light Theme Core CSS -->
+    <!-- Google Fonts here -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100italic,300,100,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300' rel='stylesheet' type='text/css'>
+	
+	<style type="text/css">
+    .box{
+        display: none;
+    }
+    
+    .green{ background: #228B22; }
+    .blue{ background: #0000ff; }
+    label{ margin-right: 15px; }
+</style>
+</head>
+<body>
+    <div id="mask">
+        <div id="loader">      
+        </div>
+    </div>
+    <!-- =================================================
+    Preloader Area End -->
+    <!-- Header Area Start 
+    ====================================================== -->
+   <header class="header-area">
+    	<div class="container-fluid">
+        	<!-- Start: Top Logo Area -->
+            <div class="col-md-2 left-side">
+            	<div class="logo"><a href="index.html"><h3>Vizoo<span>me</span></h3></a></div>
+            </div>
+            <!-- End: Top Logo Area -->
+            
+        	<!-- Start:Main Navigation -->
+            <div class="col-md-7 col-lg-8 hidden-sm">
+            	<div class="menu-bar">
+            		<nav>
+                        <ul class="menu">
+                        	<li><a href="loggedin.html">Home</a></li>
+                        	<li><a href="#">About Us</a></li>
+							<li><a href="#">Jobs</a>
+                            	<ul class="single-item">
+                                	<li><a href="searchjobs.html">Search Jobs</a></li>
+                                	<li><a href="postopportunities.html">Post Job</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Talents</a>
+                            	<ul class="single-item">
+								<li><a href="candidatelist.html">Browse Candidates</a></li>
+                                	<li><a href="searchtalents.html">Search Talent</a></li>
+                                	<li><a href="createvisualresume.html">Create Visual Resume</a></li>
+                                </ul>
+                            </li>
+							<li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                	</nav>
+                </div>
+            </div>
+			<!-- <div class="col-md-4 col-xs-12 col-lg-4 col-sm-4 hidden-xs rightmenu">
+				<ul class="">
+                     <li><a href="login.html" class="button-medium"><i class="fa fa-sign-in"></i>&nbsp;&nbsp;Login</a></li>
+                     <li><a href="join.html" class="button-medium"><i class="fa fa-user"></i>&nbsp;&nbsp;Signup</a></li>
+                     <li><a href="employerlogin.html" class="button-medium"><i class="fa fa-group"></i>&nbsp;&nbsp;Employer Login</a></li>
+				</ul>
+			</div> -->
+			<div class="col-md-3 col-lg-2 hidden-sm hidden-xs">
+			<ul class="nav navbar-nav pull-right profile-settings">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="profilepic"><img src="img/profile.png"/></span> 
+                        <strong>John Stevenson</strong>
+                        <i class="fa fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="navbar-login">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12">
+                                        <p class="text-left maincolor"><strong>John Stevenson</strong></p>
+                                        <p class="text-left small">xyz@abc.com</p>
+										<p class="divider"></p>
+                                        <a href="candidateprofile.html" class="pull-left maincolor"><strong>Edit Profile<strong></a>
+                                        <a href="login.html" class="pull-right maincolor"><strong>Signout<strong></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+			</div>
+            <!-- End:Main Navigation -->
+            
+            <!-- Start:Mobile Navigation -->
+            <div class="mob-icon"><i class="fa fa-bars"></i></div>
+            <div id="side-panel-menu">
+				<div class="col-xs-12">
+			<ul class="nav navbar-nav profile-settings">
+                <li class="dropdown text-center">
+                        <span class="profilepic"><img src="img/profile.png"/></span> 
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="navbar-login">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12">
+                                        <p class="text-center maincolor"><strong>John Stevenson</strong></p>
+                                        <p class="text-center small">xyz@abc.com</p>
+										<p class="divider"></p>
+                                        <a href="candidateprofile.html" class="maincolor"><strong>Edit Profile</strong></a>
+                                        <a href="login.html" class="maincolor"><strong class="pull-right">Signout</strong></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+			</div>
+				<ul>
+                        	<li><a href="loggedin.html">Home</a></li>
+                        	<li><a href="#">About Us</a></li>
+							<li><a href="#">Jobs</a>
+                            	<ul class="single-item">
+                                	<li><a href="searchjobs.html">Search Jobs</a></li>
+                                	<li><a href="postopportunities.html">Post Job</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Talents</a>
+                            	<ul class="single-item">
+								<li><a href="candidatelist.html">Browse Candidates</a></li>
+                                	<li><a href="searchtalents.html">Search Talent</a></li>
+                                	<li><a href="createvisualresume.html">Create Visual Resume</a></li>
+                                </ul>
+                            </li>
+							<li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+			</div>
+            <!-- End:Mobile Navigation -->
+        
+        </div>
+    </header>
+<section class="main-banner inner-page">
+    	<!-- Start:Static area -->
+		<div class="static-banner" style="background:url(img/banner-1.jpg) bottom center no-repeat fixed; background-size:cover;">
+        	<div class="mask">
+            	<div class="container">
+                	<h3 class="text-center">Payment Information</h3>
+            	</div>
+            </div>
+        </div>
+        <!-- End:Static area -->
+    </section>
+	<section class="content-area-sec">
+    	<!-- Start:Login/Register Area-->
+    	<div class="container">
+			
+			<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+				<div class="profileinfo-right">
+					<div class="col-md-12">
+						<h6 class="mrg-top-10 payment-strip">Billing Information</h6>
+					</div>
+					<form class="form-area">
+						<div class="col-md-6">
+                            <label>First Name</label>
+							<input  type="text" value="" placeholder="John"  class="text-field-box normal borderd smoke-white">
+                        </div>
+						<div class="col-md-6">
+                            <label>Last Name</label>
+							<input  type="text" value="" placeholder="Stevenson" class="text-field-box normal borderd smoke-white">
+                        </div>
+						<div class="col-md-6">
+                            <label>Email Address</label>
+							<input  type="text" value="" placeholder="stevenson.john@abc.com" class="text-field-box normal borderd smoke-white">
+                        </div>
+						<div class="col-md-6">
+                            <label>Phone Number</label>
+							<input  type="text"  value="" placeholder="+14231721322"  class="text-field-box normal borderd smoke-white">
+                        </div>
+						<div class="col-md-6">
+                            <label>Address</label>
+							<input  type="text" value="" placeholder="12th Avenue St." class="text-field-box normal borderd smoke-white">
+                        </div>
+						<div class="col-md-6">
+                            <label>Address-2</label>
+							<input  type="text" value="" placeholder="12th Avenue St." class="text-field-box normal borderd smoke-white">
+                        </div>
+						<div class="col-md-6">
+                            <label>City</label>
+							<input  type="text" value="" placeholder="St" class="text-field-box normal borderd smoke-white">
+                        </div>
+						<div class="col-md-6">
+                            <label>State</label>
+                            <select  class="text-field-box normal borderd smoke-white">
+                                <option>Alabama</option>
+                                <option>Alaska</option>
+                                <option selected>United States</option>
+                            </select>
+                        </div>
+						<div class="col-md-6">
+                            <label>Zip Code</label>
+							<input  type="text" value="" placeholder="58241536" class="text-field-box normal borderd smoke-white">
+                        </div>
+						<div class="col-md-6">
+                            <label>Country</label>
+                            <select  class="text-field-box normal borderd smoke-white">
+                                <option>Alabama</option>
+                                <option>Alaska</option>
+                                <option selected>United States</option>
+                            </select>
+                        </div>
+						
+						<div class="clearfix col-md-12"></div>
+						
+					</form>
+					<div class="col-md-12">
+						<h6 class="payment-strip">Payment Information</h6>
+					</div>
+					<form class="form-area">
+						<div class="col-md-6">
+                            <label>Select Plan</label>
+                            <select  class="text-field-box normal borderd smoke-white">
+                                <option selected>Small Business</option>
+                                <option>Large Business</option>
+                            </select>
+                        </div>
+						<div class="col-md-3 pull-right">
+							<div class="cards">
+								<img src="img/paypal-icon.png"/>
+								<img src="img/Amex.png"/>
+								<img src="img/Master-Card-icon.png"/>
+								<img src="img/visa.png"/>
+							</div>
+                        </div>
+						<div class="clearfix col-md-12"></div>
+						<div class="col-md-6 nopaddingleft nopaddingright">
+							<div class="col-md-4 col-xs-4">
+										<div class="styled-input-container companytype">
+											<div class="styled-input-single">
+												<input type="radio" name="fieldset-3" id="radio3-example-one" value="credit" checked>
+												<label for="radio3-example-one">Credit Card</label>
+											</div>
+										</div>
+									</div>
+							<div class="col-md-4 col-xs-4">
+										<div class="styled-input-container companytype">
+											<div class="styled-input-single">
+												<input type="radio" name="fieldset-3" id="radio4-example-one" value="debit">
+												<label for="radio4-example-one">Debit Card</label>
+											</div>
+										</div>
+									</div>
+							
+							<div class="col-md-4 col-xs-4">
+										<div class="styled-input-container companytype">
+											<div class="styled-input-single">
+												<input type="radio" name="fieldset-3" id="radio5-example-one" value="payment">
+												<label for="radio5-example-one">Paypal Payment</label>
+											</div>
+										</div>
+									</div>
+						</div>
+						
+						<div class="clearfix col-md-12"></div>
+						
+						<div class="col-md-6 credit box nopaddingleft nopaddingright">
+							<div class="col-md-12">
+								<label>Card Number</label>
+								<input  type="text" value="" placeholder="xxxx-xxxx-xxxx-xxxx" class="text-field-box normal borderd smoke-white">
+							</div>
+							<div class="col-md-6">
+								<label>Exp Date</label>
+								<select  class="text-field-box normal borderd smoke-white">
+									<option>(01)January</option>
+									<option>(02)February</option>
+									<option selected>(03)March</option>
+									<option>(04)April</option>
+									<option>(05)May</option>
+									<option>(06)June</option>
+									<option>(07)July</option>
+									<option>(08)August</option>
+									<option>(09)September</option>
+									<option>(10)October</option>
+									<option>(11)November</option>
+									<option>(12)December</option>
+								</select>
+							</div>
+							<div class="col-md-6">
+								<label>&nbsp;</label>
+								<select  class="text-field-box normal borderd smoke-white">
+									<option selected>2017</option>
+									<option>2018</option>
+									<option>2019</option>
+									<option>2020</option>
+									<option>2021</option>
+									<option>2022</option>
+									<option>2023</option>
+									<option>2024</option>
+									<option>2025</option>
+									<option>2026</option>
+									<option>2027</option>
+									<option>2028</option>
+									<option>2029</option>
+									<option>2030</option>
+									<option>2031</option>
+									<option>2032</option>
+									<option>2033</option>
+									<option>2034</option>
+									<option>2035</option>
+								</select>
+							</div>
+							<div class="col-md-4">
+								<label>CVV</label>
+								<input  type="text" value="" placeholder="7715" class="text-field-box normal borderd smoke-white">
+							</div>
+							<div class="col-md-8">
+								<label>Name On Card</label>
+								<input  type="text" value="" placeholder="Name On the Card" class="text-field-box normal borderd smoke-white">
+							</div>
+						</div>
+						
+						
+						<div class="col-md-6 debit box nopaddingleft nopaddingright">
+							<div class="col-md-12">
+								<label>Card Number</label>
+								<input  type="text" value="" placeholder="xxxx-xxxx-xxxx-xxxx" class="text-field-box normal borderd smoke-white">
+							</div>
+							<div class="col-md-6">
+								<label>Exp Date</label>
+								<select  class="text-field-box normal borderd smoke-white">
+									<option>(01)January</option>
+									<option>(02)February</option>
+									<option selected>(03)March</option>
+									<option>(04)April</option>
+									<option>(05)May</option>
+									<option>(06)June</option>
+									<option>(07)July</option>
+									<option>(08)August</option>
+									<option>(09)September</option>
+									<option>(10)October</option>
+									<option>(11)November</option>
+									<option>(12)December</option>
+								</select>
+							</div>
+							<div class="col-md-6">
+								<label>&nbsp;</label>
+								<select  class="text-field-box normal borderd smoke-white">
+									<option selected>2017</option>
+									<option>2018</option>
+									<option>2019</option>
+									<option>2020</option>
+									<option>2021</option>
+									<option>2022</option>
+									<option>2023</option>
+									<option>2024</option>
+									<option>2025</option>
+									<option>2026</option>
+									<option>2027</option>
+									<option>2028</option>
+									<option>2029</option>
+									<option>2030</option>
+									<option>2031</option>
+									<option>2032</option>
+									<option>2033</option>
+									<option>2034</option>
+									<option>2035</option>
+								</select>
+							</div>
+							<div class="col-md-4">
+								<label>CVV</label>
+								<input  type="text" value="" placeholder="7715" class="text-field-box normal borderd smoke-white">
+							</div>
+							<div class="col-md-8">
+								<label>Name On Card</label>
+								<input  type="text" value="" placeholder="Name On the Card" class="text-field-box normal borderd smoke-white">
+							</div>
+						</div>
+						
+						
+						<div class="col-md-6 payment box nopaddingleft nopaddingright">
+							<a href="#"><img src="img/paypal.jpg" class="img-responsive"/></a>
+						</div>
+						
+						<div class="clearfix col-md-12"></div>
+						<div class="col-md-12 center-block text-center">
+							<button type="submit" class="button-submit mrg-top-10"><i class="fa fa-check"></i>&nbsp;&nbsp;Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+			
+		</div>
+	</section>
+	<!-- Footer Area Start 
+    ====================================================== -->
+    <footer class="footer-area">
+        <!-- End:copyright area -->
+        <div class="copyright">
+        	<div class="container">
+            	<p><span>© Vizoome 2017.</span> All Rights Reserved. </p>
+            </div>
+        </div>
+        <!-- End:copyright area -->
+    </footer>
+    <!-- =================================================
+    Footer Area End -->
+    <!-- Scripts -->
+    <script type="text/javascript" src="js/jquery-2.1.1.js"></script><!-- Owl Carousel Js -->
+    <script type="text/javascript" src="js/owl.carousel.js"></script><!-- Owl Carousel Js -->
+    <script type="text/javascript" src="js/owl-carousel-settings.js"></script><!-- Owl Carousel Settings Js -->
+    <script type="text/javascript" src="js/jquery.flexslider.js"></script><!-- Flexslider Settings Js -->
+	<script type="text/javascript" src="js/mini-grid.js"></script><!-- Mini Master Grid Js -->
+    <script type="text/javascript" src="js/settings.js"></script><!-- Settings Js -->
+    <script type="text/javascript" src="js/bootstrap.js"></script><!-- Bootstrap Js -->
+    <script type="text/javascript" src="js/featherlight.min.js" ></script><!-- Feather-Lightbox (projects) Js -->
+    <script type="text/javascript" src="js/forms.js"></script><!-- Form Js -->
+    <script type="text/javascript" src="js/animation.js" ></script><!-- Animation Js -->
+		<script type="text/javascript">
+$(document).ready(function(){
+	$('.credit').show();
+    $('input[type="radio"]').click(function(){
+        var inputValue = $(this).attr("value");
+        var targetBox = $("." + inputValue);
+        $(".box").not(targetBox).hide();
+        $(targetBox).show();
+    });
+});
+</script>
+</body>
+</html>

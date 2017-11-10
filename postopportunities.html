@@ -33,7 +33,7 @@
     	<div class="container-fluid">
         	<!-- Start: Top Logo Area -->
             <div class="col-md-2 left-side">
-            	<div class="logo"><a href="loggedin.html"><h3>Vizoome</h3></a></div>
+            	<div class="logo"><a href="index.html"><h3>Vizoo<span>me</span></h3></a></div>
             </div>
             <!-- End: Top Logo Area -->
             
@@ -52,10 +52,12 @@
                             </li>
                             <li><a href="#">Talents</a>
                             	<ul class="single-item">
+								<li><a href="candidatelist.html">Browse Candidates</a></li>
                                 	<li><a href="searchtalents.html">Search Talent</a></li>
                                 	<li><a href="createvisualresume.html">Create Visual Resume</a></li>
                                 </ul>
                             </li>
+							<li><a href="pricing.html">Pricing</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                 	</nav>
@@ -84,7 +86,7 @@
                                         <p class="text-left maincolor"><strong>John Stevenson</strong></p>
                                         <p class="text-left small">xyz@abc.com</p>
 										<p class="divider"></p>
-                                        <a href="#" class="pull-left maincolor"><strong>Edit Profile</strong></a>
+                                        <a href="candidateprofile.html" class="pull-left maincolor"><strong>Edit Profile</strong></a>
                                         <a href="login.html" class="pull-right maincolor"><strong>Signout</strong></a>
                                     </div>
                                 </div>
@@ -111,7 +113,7 @@
                                         <p class="text-center maincolor"><strong>John Stevenson</strong></p>
                                         <p class="text-center small">xyz@abc.com</p>
 										<p class="divider"></p>
-                                        <a href="#" class="maincolor"><strong>Edit Profile</strong></a>
+                                        <a href="candidateprofile.html" class="maincolor"><strong>Edit Profile</strong></a>
                                         <a href="login.html" class="maincolor"><strong class="pull-right">Signout</strong></a>
                                     </div>
                                 </div>
@@ -132,10 +134,12 @@
                             </li>
                             <li><a href="#">Talents</a>
                             	<ul class="single-item">
+								<li><a href="candidatelist.html">Browse Candidates</a></li>
                                 	<li><a href="searchtalents.html">Search Talent</a></li>
                                 	<li><a href="createvisualresume.html">Create Visual Resume</a></li>
                                 </ul>
                             </li>
+							<li><a href="pricing.html">Pricing</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
 			</div>
@@ -174,36 +178,129 @@
 					<form>
                     	<!-- Start:Form  Area -->
                         <div class="form-area">
+							<div class="col-md-12">
+                                        <label class="col-md-12 col-xs-12 nopaddingleft nopaddingright">Type of Job</label>
+										<div class="col-md-4 col-xs-12 nopaddingleft nopaddingright">
+										<div class="styled-input-container custom-chkbox">
+											<div class="styled-input-single">
+												<input type="checkbox" name="fieldset-3" id="checkbox8-example-one" />
+												<label for="checkbox8-example-one">Full Time</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-xs-12 nopaddingleft nopaddingright">
+										<div class="styled-input-container custom-chkbox">
+											<div class="styled-input-single">
+												<input type="checkbox" name="fieldset-3" id="checkbox9-example-one" />
+												<label for="checkbox9-example-one">Part Time</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-xs-12 nopaddingleft nopaddingright">
+										<div class="styled-input-container custom-chkbox">
+											<div class="styled-input-single">
+												<input type="checkbox" name="fieldset-3" id="checkbox10-example-one" />
+												<label for="checkbox10-example-one">Internship</label>
+											</div>
+										</div>
+									</div>
+                            </div>
 							<div class="col-md-6">
-								<label>Company</label>
-								<input type="text"  class="text-field-box normal borderd smoke-white" placeholder="#Vizoome">
+								<label>Designation</label>
+								<input type="text"  class="text-field-box normal borderd smoke-white" placeholder="e.g.#Account">
 							</div>
 							<div class="col-md-6">
-								<label>Position</label>
-								<input type="text"  class="text-field-box normal borderd smoke-white" placeholder="#Account">
+								<label>Qualification/Eligibility</label>
+								<input type="text"  class="text-field-box normal borderd smoke-white" placeholder="e.g.#Masters, #PG">
 							</div>
 							<div class="col-md-6">
-								<label>Location</label>
-								<input type="text"  class="text-field-box normal borderd smoke-white" placeholder="#California">
+								<label>Job Location</label>
+								<input type="text"  class="text-field-box normal borderd smoke-white" placeholder="e.g.#California, #Unites States">
 							</div>
 							<div class="col-md-6">
-								<label>Required Skill Set</label>
-								<input type="text"  class="text-field-box normal borderd smoke-white" placeholder="#java, #PHP">
+								<label>Year of passing start years and end years</label>
+								<div class="col-md-6 col-xs-12 nopaddingleft nopaddingright">
+									<div class="input-group startdate">
+											<input  type="text"  class="text-field-box normal span2 borderd smoke-white" placeholder="Start Date" id="dp1">
+											<span class="input-group-addon">
+												<span class="fa fa-calendar"></span>
+											</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xs-12 nopaddingleft nopaddingright">
+									<div class="input-group enddate">
+											<input  type="text"  class="text-field-box normal span2 borderd smoke-white" placeholder="End Date" id="dp2">
+											<span class="input-group-addon">
+												<span class="fa fa-calendar"></span>
+											</span>
+									</div>
+								</div>
 							</div>
 							<div class="col-md-6">
-								<label>Yrs of Experience</label>
-								<input type="text"  class="text-field-box normal borderd smoke-white" placeholder="#5yrs">
+								<label>Skills</label>
+								<textarea class="text-field-box normal borderd" placeholder="e.g.#HTML, #CSS3, #PHP"></textarea>
 							</div>
 							<div class="col-md-6">
-								<label>Responsibilities</label>
-								<input type="text"  class="text-field-box normal borderd smoke-white" placeholder="#manager, #strategyset">
+								<label>Job Description</label>
+								<textarea class="text-field-box normal borderd" placeholder="e.g.Requirements"></textarea>
 							</div>
 							<div class="col-md-6">
-								<label>License (if required)</label>
-								<input type="text"  class="text-field-box normal borderd smoke-white" placeholder="#law, #cpa">
+								<label>Salary range...</label>
+								<select class="text-field-box normal borderd smoke-white">
+                                <option>Select Salary Range</option>
+                                <option>5000-10000</option>
+                                <option>10000-15000</option>
+                                <option>15000-20000</option>
+                                <option>20000-25000</option>
+                                <option>25000-30000</option>
+                            </select>
 							</div>
 							<div class="col-md-6">
-								<label>Team member IDs</label>
+								<label>Last date application</label>
+								<div class="input-group enddate">
+									<input  type="text"  class="text-field-box normal span2 borderd smoke-white" id="dp3">
+									<span class="input-group-addon">
+									<span class="fa fa-calendar"></span>
+									</span>
+								</div>
+							</div>
+							<div class="col-md-12">
+                                        <label class="col-md-12 col-xs-12 nopaddingleft nopaddingright">Hiring Process</label>
+										<div class="col-md-3 col-xs-12 nopaddingleft nopaddingright">
+										<div class="styled-input-container custom-chkbox">
+											<div class="styled-input-single">
+												<input type="checkbox" name="fieldset-3" id="checkbox11-example-one" />
+												<label for="checkbox11-example-one">Face to Face</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-xs-12 nopaddingleft nopaddingright">
+										<div class="styled-input-container custom-chkbox">
+											<div class="styled-input-single">
+												<input type="checkbox" name="fieldset-3" id="checkbox12-example-one" />
+												<label for="checkbox12-example-one">Written Test</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-xs-12 nopaddingleft nopaddingright">
+										<div class="styled-input-container custom-chkbox">
+											<div class="styled-input-single">
+												<input type="checkbox" name="fieldset-3" id="checkbox13-example-one" />
+												<label for="checkbox13-example-one">Telephonic</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-xs-12 nopaddingleft nopaddingright">
+										<div class="styled-input-container custom-chkbox">
+											<div class="styled-input-single">
+												<input type="checkbox" name="fieldset-3" id="checkbox14-example-one" />
+												<label for="checkbox14-example-one">WalkIn</label>
+											</div>
+										</div>
+									</div>
+                            </div>
+							<div class="col-md-6">
+								<label>Number of vacancies</label>
 								<input type="text"  class="text-field-box normal borderd smoke-white">
 							</div>
 							<div class="col-md-12 text-center center-block">
@@ -373,6 +470,14 @@
 }(jQuery));
 
 $('input[type=file]').customFile();
+	</script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+	$('#dp1').datepicker();
+	$('#dp3').datepicker();
+	$('#dp2').datepicker();
+		
+	});
 	</script>
 </body>
 </html>
