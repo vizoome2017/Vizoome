@@ -12,7 +12,7 @@
 	font-style: normal;
 }
 html, body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	height: 100%;
 	width: 100%;
@@ -61,7 +61,7 @@ h4 {
 }
 h5 {
 	margin: 0;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 24px;
 	color: #232838;
 	font-weight: 400;
@@ -69,7 +69,7 @@ h5 {
 h6 {
 	margin: 0 0 15px 0;
 	padding: 0 0 0 0;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 18px;
 	color: #232838;
 	font-weight: 700;
@@ -77,7 +77,7 @@ h6 {
 p {
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	color: #666;
@@ -302,7 +302,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e90e3', end
     border-bottom: 1px solid rgba(0, 0, 0, 0);
     color: #ffffff;
     display: block;
-    font-family: "Lato",serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase; padding:9px 0;
@@ -414,7 +414,7 @@ body.openmenu {
 }
 #side-panel-menu {
 	height: 100%;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Lato', serif;
 	width: 0;
 	background: #232838;
 	position: fixed;
@@ -611,7 +611,7 @@ body.openmenu {
 	padding: 0 15px;
 	margin: 0 10px;
 	font-size: 18px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Lato', serif;
 	height: 46px;
 	line-height: 46px;
 	position: relative;
@@ -868,7 +868,7 @@ body.openmenu {
 }
 .jobs-details-sec li .info-box span {
 	font-size: 14px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Lato', serif;
 	margin: 0 20px;
 }
 .info-box .highlight {
@@ -1407,7 +1407,7 @@ theme .owl-controls.clickable .owl-buttons div:hover {
 }
 .main-job-details li .info-box span {
 	font-size: 14px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Lato', serif;
 	margin: 0 15px;
 }
 .main-job-details li .info-box .title-holder {
@@ -1752,7 +1752,7 @@ theme .owl-controls.clickable .owl-buttons div:hover {
 	margin: 0 0 25px;
 	font-size: 16px;
 	color: #666;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Lato', serif;
 }
 .main-resume-area .tab-container {
 	margin-bottom: 30px;
@@ -1836,11 +1836,11 @@ theme .owl-controls.clickable .owl-buttons div:hover {
 .candidate-info-sec h4 {
 	font-weight: 700;
 	color: #00c8dc;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Lato', serif;
 	margin: 10px 0 15px !important;
 }
 .candidate-info-sec h5 span {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Lato', serif;
 	color: #00c8dc;
 	margin: 10px 0 15px;
 	display: block;
@@ -1978,7 +1978,7 @@ theme .owl-controls.clickable .owl-buttons div:hover {
 }
 .download-app-sec h5 {
 	color: #fff;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Lato', serif;
 	font-weight: 400;
 	text-transform: uppercase;
 	margin: 0 0 35px;
@@ -2444,7 +2444,7 @@ a.down-app-btn:hover, .down-app-btn:hover {
 	overflow:hidden;
 }
 .form-area label {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Lato', serif;
 	font-weight: 700;
 	font-size: 18px;
 	margin: 20px 0 5px;
@@ -2553,7 +2553,7 @@ option {
 	text-align: left;
 	color: #666;
 	font-size: 14px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Lato', serif;
 	padding: 0 15px;
 	width: 100%;
 	outline: none;
@@ -2605,7 +2605,7 @@ form .button-normal {
 	color: #ffffff;
 	cursor: pointer;
 	display: block;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Lato', serif;
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -2633,7 +2633,7 @@ form .button-normal {
 	color: #ffffff;
 	cursor: pointer;
 	display: block;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Lato', serif;
 	font-size: 13px;
 	font-weight: 700;
 	margin: 0 auto;
@@ -2666,7 +2666,7 @@ form .button-normal {
 	height: 32px;
 	line-height: 32px;
 	margin: 0 auto;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Lato', serif;
 	overflow: hidden;
 	text-align: center;
 	width: 120px;
@@ -2690,7 +2690,7 @@ form .button-normal {
 	color: #ffffff;
 	cursor: pointer;
 	display: block;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Lato', serif;
 	font-size: 18px;
 	font-weight: 400;
 	margin: 0 auto;
@@ -2800,7 +2800,7 @@ form .button-normal {
 	line-height: 30px;
 	font-size: 16px;
 	color: #666;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Lato', serif;
 	font-weight: 400;
 }
 .default-list li a {
@@ -3004,7 +3004,7 @@ form .button-normal {
 	font-family: Lato;
 }
 .form-area .accordion .tab {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Lato', serif;
 	line-height: 54px;
 	height: 54px;
 	margin: 0;

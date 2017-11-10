@@ -17,10 +17,12 @@
  
 
 h1, h2, h3, h4, h5, h6 {font-family: "Arial Rounded MT Bold" !important;}
-body {font-family: 'Montserrat', sans-serif; height:auto;}
+body {font-family: 'Raleway', sans-serif; height:auto;}
 a, a:hover, a:focus {color:#5e90e3;}
 .maincolor {color:#5e90e3 !important;}
 .fixed-footer {position:absolute; bottom:0;}
+strong{font-weight:600;}
+.menu-bar .menu li a {letter-spacing:0.5px}
 
 
 /* Home Page */
