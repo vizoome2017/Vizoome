@@ -14,7 +14,7 @@
     <link type="text/css" rel="stylesheet" href="css/animate.min.css"><!-- Animation -->
     <link type="text/css" rel="stylesheet" href="css/flexslider.css"><!-- FlexSlider CSS -->
     <link type="text/css" rel="stylesheet" href="css/datepicker.css"><!-- FlexSlider CSS -->
-	<link href="https://code.jquery.com/ui/1.8.24/themes/blitzer/jquery-ui.css" rel="stylesheet" type="text/css" />
+	<link href="http://code.jquery.com/ui/1.8.24/themes/blitzer/jquery-ui.css" rel="stylesheet" type="text/css" />
     <link type="text/css" rel="stylesheet" href="css/style.css"><!-- Light Theme Core CSS -->
     <link type="text/css" rel="stylesheet" href="css/custom.css"><!-- Light Theme Core CSS -->
     <!-- Google Fonts here -->
@@ -150,116 +150,41 @@
     <!-- =================================================
     Header Area End -->
     
-    
-    <!-- Banner Area 
-    ====================================================== -->
-    <section class="main-banner inner-page">
-    	<!-- Start:Static area -->
-		<div class="static-banner" style="background:url(img/banner-1.jpg) bottom center no-repeat fixed; background-size:cover;">
-        	<div class="mask">
-            	<div class="container">
-                	<h3 class="text-center">Search Talents</h3>
-            	</div>
-            </div>
-        </div>
-        <!-- End:Static area -->
-    </section>
-    <!-- =================================================
-    Banner Area End -->
-    
-    
     <!-- Content Area Start 
     ====================================================== -->
     <section class="content-area-sec">
     	<!-- Start:Login/Register Area-->
-    	<div class="container">
-        	<div class="searchtalents">
-				<div class="col-md-10 col-md-offset-1 col-xs-12 custom-input">
-					<label class="col-md-2 col-xs-12">Search Talents</label>
-					<div class="col-md-6 col-xs-12 col-sm-8">
-						<input type="text" class="text-field-box normal borderd smoke-white" placeholder="#company, #position, #skill, #yrs..."/>
-					</div>
-					<span class="info col-md-2 col-xs-12 col-sm-4">Want to Share it? Just click and drag to the blue bar</span>
-				</div>
-				<div class="clearfix"></div>
-				<div class="searchtalents-content">
-					<div id="dvSource">
-						<div class="col-md-3 col-xs-12 col-sm-4 dummyclass">
-						<div class="talent-card">
-							<img alt="" src="img/profile1.jpg" class="center-block" />
-							<hr class="hr-talent">
-							<h6>John</h6>
-							<p>UI/UX Designer</p>
-							<p><strong>Skill Set: Photoshop, HTML5, CSS3</strong></p>
-						</div>
-						</div>
-						<div class="col-md-3 col-xs-12 col-sm-4 dummyclass">
-						<div class="talent-card">
-							<img alt="" src="img/profile2.jpg" class="center-block" />
-							<hr class="hr-talent">
-							<h6>Stevenson</h6>
-							<p>UI Developer</p>
-							<p><strong>Skill Set: HTML5, CSS3, Angular Js</strong></p>
-						</div>
-						</div>
-						<div class="col-md-3 col-xs-12 col-sm-4 dummyclass">
-						<div class="talent-card">
-							<img alt="" src="img/profile3.jpg" class="center-block" />
-							<hr class="hr-talent">
-							<h6>User 1</h6>
-							<p>Web Developer</p>
-							<p><strong>Skill Set: .Net, PHP</strong></p>
-						</div>
-						</div>
-						<div class="col-md-3 col-xs-12 col-sm-4 dummyclass">
-						<div class="talent-card">
-							<img alt="" src="img/profile4.jpg" class="center-block" />
-							<hr class="hr-talent">
-							<h6>User 2</h6>
-							<p>Supervisor</p>
-							<p><strong>Skill Set: MS Office</strong></p>
-						</div>
-						</div>
-						<div class="col-md-3 col-xs-12 col-sm-4 dummyclass">
-						<div class="talent-card">
-							<img alt="" src="img/profile5.jpg" class="center-block" />
-							<hr class="hr-talent">
-							<h6>User 3</h6>
-							<p>Manager</p>
-							<p><strong>Skill Set: Project Handling</strong></p>
-						</div>
-						</div>
-						<div class="col-md-3 col-xs-12 col-sm-4 dummyclass">
-						<div class="talent-card">
-							<img alt="" src="img/profile6.jpg" class="center-block" />
-							<hr class="hr-talent">
-							<h6>User 4</h6>
-							<p>Graphic Designer</p>
-							<p><strong>Skill Set: Photoshop, Coraldraw, Adobe Illustrator</strong></p>
-						</div>
-						</div>
-						<div class="col-md-3 col-xs-12 col-sm-4 dummyclass">
-						<div class="talent-card">
-							<img alt="" src="img/profile7.jpg" class="center-block" />
-							<hr class="hr-talent">
-							<h6>Uesr 5</h6>
-							<p>Wordpress Developer</p>
-							<p><strong>Skill Set: PHP, Plugin Installation</strong></p>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-12 col-xs-12 col-sm-12">
-						<div id="dvDest">
-							<span>Drop here</span>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-					<div class="col-md-12 center-block text-center">
-						<button type="submit" class="share-btn" onclick="window.location.href = 'jobschat.html';">Share with Team (wan to take a look ? Just click it)</button>
-					</div>
-				</div>
-			</div>
-        </div>     
+    	<div class="nav-side-menu">
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+        <div class="menu-list">
+            <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                  <a href="#">
+                  <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                  </a>
+                </li>
+
+                <li  data-toggle="collapse" data-target="#products" class="collapsed active">
+                  <a href="#"><i class="fa fa-wpforms fa-lg"></i> Forms <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapsed" id="products">
+                    <li class="active"><a href="#">Data Form</a></li>
+                    <li><a href="#">Data List</a></li>
+                </ul>
+                <li data-toggle="collapse" data-target="#service" class="collapsed">
+                  <a href="#"><i class="fa fa-file-word-o fa-lg"></i> My Resumes <span class="arrow"></span></a>
+                </li>  
+                <li data-toggle="collapse" data-target="#new" class="collapsed">
+                  <a href="#"><i class="fa fa-tasks fa-lg"></i> Manage Jobs <span class="arrow"></span></a>
+                </li>
+                 <li>
+                  <a href="#">
+                  <i class="fa fa-user fa-lg"></i> Manage Account
+                  </a>
+                  </li>
+            </ul>
+     </div>
+</div>    
 		<!-- End:Login/Register Area-->
     </section>
 	
@@ -268,7 +193,7 @@
     
     <!-- Footer Area Start 
     ====================================================== -->
-    <footer class="footer-area">
+    <footer class="footer-area fixed footer">
         <!-- End:copyright area -->
         <div class="copyright">
         	<div class="container">
@@ -289,33 +214,46 @@
     <script type="text/javascript" src="js/featherlight.min.js" ></script><!-- Feather-Lightbox (projects) Js -->
     <script type="text/javascript" src="js/forms.js"></script><!-- Form Js -->
     <script type="text/javascript" src="js/animation.js" ></script><!-- Animation Js -->
+	<script src="js/jquery.bootpag.min.js"></script>
     <script type="text/javascript" src="js/bootstrap-datepicker.js" ></script><!-- Animation Js -->
     <script src="https://code.jquery.com/ui/1.8.24/jquery-ui.min.js" type="text/javascript"></script>
+	
 	<script type="text/javascript">
-	$(function () {
-		$("#dvSource .dummyclass").draggable({
-			revert: "invalid",
-			refreshPositions: true,
-			drag: function (event, ui) {
-				ui.helper.addClass("draggable");
-			},
-			<!-- stop: function (event, ui) { -->
-				<!-- ui.helper.removeClass("draggable"); -->
-				<!-- var image = this.src.split("/")[this.src.split("/").length - 1]; -->
-			<!-- } -->
-		});
-		$("#dvDest").droppable({
-			drop: function (event, ui) {
-				if ($("#dvDest").length == 0) {
-					$("#dvDest").html("");
-				}
-				ui.draggable.addClass("dropped");
-				$("#dvDest").append(ui.draggable);
-				$("#dvDest span").hide();
-				$("#dvDest").addClass('padding10');
-			}
-		});
-	});
+	$(function(){
+
+    var currentValue = $('#currentValue');
+
+    $('#defaultSlider').change(function(){
+        currentValue.html(this.value);
+    });
+
+    // Trigger the event on load, so
+    // the value field is populated:
+
+    $('#defaultSlider').change();
+
+});
 	</script>
+	<script>
+  $( function() {
+  
+    $('#flat-slider').slider({
+  orientation: 'horizontal',
+  range:       true,
+  values:      [130,682],
+  min:0,
+  max:1000,
+});
+  });
+  </script>
+  <script>
+        $('.demo1').bootpag({
+    total: 4,
+	maxVisible: 4
+}).on("page", function(event, num){
+    $(".content").html("Page " + num); // or some ajax content loading...
+ 
+});
+    </script>
 </body>
 </html>

@@ -246,11 +246,7 @@ body::-webkit-scrollbar-thumb {
 .header-area.navbar-fixed-top {
 	position: fixed;
 	padding: 15px 0;
-	background: #5e90e3; /* Old browsers */
-background: -moz-linear-gradient(left, #5e90e3 0%, #898ad4 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, #5e90e3 0%,#898ad4 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, #5e90e3 0%,#898ad4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e90e3', endColorstr='#898ad4',GradientType=1 ); /* IE6-9 */
+	background-color:#89bd21;
 	-webkit-transition: all 0.5s ease 0s;
 	-moz-transition: all 0.5s ease 0s;
 	-ms-transition: all 0.5s ease 0s;
@@ -2476,11 +2472,11 @@ form .col-md-12:last-child {
 	padding-top: 30px;
 }
 form a {
-	color: #5e90e3;
+	color: #89bd21;
 	margin: 0 10px;
 }
 form a:hover {
-	color: #5e90e3;
+	color: #89bd21;
 }
 .login-sec {
 	max-width: 550px;
@@ -2633,13 +2629,12 @@ form .button-normal {
 	color: #ffffff;
 	cursor: pointer;
 	display: block;
-	font-family: 'Lato', serif;
 	font-size: 13px;
 	font-weight: 700;
 	margin: 0 auto;
 	overflow: hidden;
 	text-align: center;
-	padding:3px 15px;
+	padding:3px 12px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;

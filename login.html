@@ -218,7 +218,7 @@
     
     <!-- Footer Area Start 
     ====================================================== -->
-    <footer class="footer-area fixed-footer">
+    <footer class="footer-area">
         <!-- End:copyright area -->
         <div class="copyright">
         	<div class="container">
@@ -240,6 +240,13 @@
     <script type="text/javascript" src="js/forms.js"></script><!-- Form Js -->
     <script type="text/javascript" src="js/animation.js" ></script><!-- Animation Js -->
     <script type="text/javascript" src="js/bootstrap-datepicker.js" ></script><!-- Animation Js -->
-    
+    <script>
+		$(document).ready(function(){
+			  if(window.screen.width > 1200){
+			  
+					$(".footer-area").addClass('fixed-footer');
+			}
+	});
+	</script>
 </body>
 </html>
