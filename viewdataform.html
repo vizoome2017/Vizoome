@@ -18,6 +18,10 @@
     <!-- Google Fonts here -->
     <link href='https://fonts.googleapis.com/css?family=Lato:400,100italic,300,100,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300' rel='stylesheet' type='text/css'>
+	<style>
+		.profileinfo-left {margin-bottom:60px;}
+		.profileinfo-right {padding:0px;}
+	</style>
 </head>
 <body>
     <div id="mask">
@@ -37,7 +41,7 @@
             <!-- End: Top Logo Area -->
             
         	<!-- Start:Main Navigation -->
-            <div class="col-md-7 col-lg-8 hidden-sm">
+            <div class="col-md-7 col-lg-7 hidden-sm">
             	<div class="menu-bar">
             		<nav>
                         <ul class="menu">
@@ -68,7 +72,7 @@
                      <li><a href="employerlogin.html" class="button-medium"><i class="fa fa-group"></i>&nbsp;&nbsp;Employer Login</a></li>
 				</ul>
 			</div> -->
-			<div class="col-md-3 col-lg-2 hidden-sm hidden-xs">
+			<div class="col-md-3 col-lg-3 hidden-sm hidden-xs">
 			<ul class="nav navbar-nav pull-right profile-settings">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -144,46 +148,55 @@
         
         </div>
     </header>
-
+<section class="main-banner inner-page">
+    	<!-- Start:Static area -->
+		<div class="static-banner" style="background:url(img/banner-1.jpg) bottom center no-repeat fixed; background-size:cover;">
+        	<div class="mask">
+            	<div class="container">
+                	<h3 class="text-center">Data Form</h3>
+            	</div>
+            </div>
+        </div>
+        <!-- End:Static area -->
+    </section>
 	<section class="content-area-sec">
-	<div class="nav-side-menu">
-    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
-        <div class="menu-list">
-            <ul id="menu-content" class="menu-content collapse out">
-                <li>
-                  <a href="#">
-                  <i class="fa fa-dashboard fa-lg"></i> Dashboard
-                  </a>
-                </li>
+    	<!-- Start:Login/Register Area-->
+		<div class="container">
+			<div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 nopaddingleftmob nopaddingrightmob">
+				<div class="profileinfo-left nav-side-menu">
+				<i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+					<div class="menu-list">
+						<ul id="menu-content" class="menu-content collapse out">
+							<li>
+							  <a href="#">
+							  <i class="fa fa-dashboard fa-lg"></i> Dashboard
+							  </a>
+							</li>
 
-                <li  data-toggle="collapse" data-target="#products" class="collapsed active">
-                  <a href="#"><i class="fa fa-wpforms fa-lg"></i> Forms <span class="arrow"></span></a>
-                </li>
-                <ul class="sub-menu collapsed in" id="products">
-                    <li><a href="addedform.html">Data Form</a></li>
-                    <li class="active"><a href="viewdataform.html">Data List</a></li>
-                </ul>
-                <li data-toggle="collapse" data-target="#service">
-                  <a href="#"><i class="fa fa-file-word-o fa-lg"></i> My Resumes <span class="arrow"></span></a>
-                </li>  
-                <li data-toggle="collapse" data-target="#new">
-                  <a href="#"><i class="fa fa-tasks fa-lg"></i> Manage Jobs <span class="arrow"></span></a>
-                </li>
-                 <li>
-                  <a href="#">
-                  <i class="fa fa-user fa-lg"></i> Manage Account
-                  </a>
-                  </li>
-            </ul>
-     </div>
-</div> 
-<ul class="breadcrumb">
-		<li><a href="dashboard.html">Dashboard</a></li>
-		<li>Forms</li>
-		<li>Data List</li>
-	</ul>
-			<div class="main-content">
-				<div class="employeedetails main-content-body">
+							<li  data-toggle="collapse" data-target="#products" class="collapsed active">
+							  <a href="#"><i class="fa fa-wpforms fa-lg"></i> Forms <span class="arrow"></span></a>
+							</li>
+							<ul class="sub-menu collapsed in" id="products">
+								<li><a href="addedform.html">Data Form</a></li>
+								<li><a href="viewdataform.html">Data List</a></li>
+							</ul>
+							<li>
+							  <a href="#"><i class="fa fa-file-word-o fa-lg"></i> My Resumes</a>
+							</li>  
+							<li>
+							  <a href="#"><i class="fa fa-tasks fa-lg"></i> Manage Jobs</a>
+							</li>
+							 <li>
+							  <a href="#">
+							  <i class="fa fa-user fa-lg"></i> Manage Account
+							  </a>
+							  </li>
+						</ul>
+				 </div>
+			</div> 
+			</div>
+			<div class="profileinfo-right col-md-9 col-lg-9 col-sm-8 col-xs-12">
+				<div class="employeedetails">
 					<div class="table-responsive">
 						<table class="table table-striped">
 							<thead>
