@@ -246,7 +246,7 @@ body::-webkit-scrollbar-thumb {
 .header-area.navbar-fixed-top {
 	position: fixed;
 	padding: 15px 0;
-	background-color:#53e2e2;
+	background-color:#33CCFF;
 	-webkit-transition: all 0.5s ease 0s;
 	-moz-transition: all 0.5s ease 0s;
 	-ms-transition: all 0.5s ease 0s;
@@ -2472,11 +2472,11 @@ form .col-md-12:last-child {
 	padding-top: 30px;
 }
 form a {
-	color: #53e2e2;
+	color: #33CCFF;
 	margin: 0 10px;
 }
 form a:hover {
-	color: #53e2e2;
+	color: #33CCFF;
 }
 .login-sec {
 	max-width: 550px;
