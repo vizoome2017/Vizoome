@@ -1,4 +1,25 @@
 
+@font-face { 
+ font-family: "Segoe UI";
+ src: url("../fonts/Segoe_Print.ttf");
+ }
+ 
+ @font-face { 
+ font-family: "Segoe UI_Bold";
+ src: url("../fonts/Segoe_Print_Bold.ttf");
+ }
+ 
+ @font-face { 
+ font-family: "Arial Rounded MT Bold";
+ src: url("../fonts/Arial Rounded MT Bold.ttf");
+ }
+ 
+ @font-face { 
+ font-family: 'Raleway', sans-serif;
+ src: url("../fonts/Raleway-Regular.ttf");
+ }
+
+
 
 article,
 aside,
@@ -32,7 +53,7 @@ template {
 }
 
 html {
-  font-family: sans-serif;
+  font-family:  'Raleway', sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -87,7 +108,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, serif;
+  font-family:  'Raleway', sans-serif;
   font-size: 1em;
 }
 
@@ -297,7 +318,7 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
@@ -391,7 +412,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -735,7 +756,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: 'Raleway', sans-serif;
 }
 
 code {
@@ -6448,7 +6469,7 @@ button.close {
   height: 20px;
   margin-top: -10px;
   margin-left: -10px;
-  font-family: serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .carousel-control .icon-prev:before {

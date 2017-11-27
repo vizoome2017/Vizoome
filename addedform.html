@@ -167,6 +167,14 @@
 				<div class="profileinfo-left nav-side-menu">
 				<i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
 					<div class="menu-list">
+						<div class="profilebasicinfo">
+							<div class="image">
+								<img src="img/profile.png" class="center-block"/>
+							</div>
+							<h6 class="text-center">John Stevenson</h6>
+							<p class="text-center">User</p>
+						</div>
+						<hr class="hr-jobs"/>
 						<ul id="menu-content" class="menu-content collapse out">
 							<li>
 							  <a href="#">
@@ -178,8 +186,15 @@
 							  <a href="#"><i class="fa fa-wpforms fa-lg"></i> Forms <span class="arrow"></span></a>
 							</li>
 							<ul class="sub-menu collapsed in" id="products">
-								<li><a href="addedform.html">Department</a></li>
+								<li class="subactive"><a href="addedform.html">Department</a></li>
 								<li><a href="viewdataform.html">Data List</a></li>
+							</ul>
+							<li data-toggle="collapse" data-target="#recruitment" class="collapsed">
+							  <a href="#"><i class="fa fa-users fa-lg"></i> Recruitment <span class="arrow"></span></a>
+							</li>
+							<ul class="sub-menu collapse" id="recruitment">
+								<li><a href="recruitmentlist.html">Recruitment List</a></li>
+								<li><a href="recruitment.html">Add Recruitment</a></li>
 							</ul>
 							<li>
 							  <a href="myresumes.html"><i class="fa fa-file-word-o fa-lg"></i> My Resumes</a>
@@ -187,34 +202,37 @@
 							<li>
 							  <a href="#"><i class="fa fa-tasks fa-lg"></i> Manage Jobs</a>
 							</li>
-							 <li>
-							  <a href="#">
-							  <i class="fa fa-user fa-lg"></i> Manage Account
-							  </a>
-							  </li>
+							 <li data-toggle="collapse" data-target="#manageaccount" class="collapsed">
+							  <a href="#"><i class="fa fa-user fa-lg"></i> Manage Account <span class="arrow"></span></a>
+							</li>
+							<ul class="sub-menu collapse" id="manageaccount">
+								<li><a href="candidateprofile.html">Edit Profile</a></li>
+								<li><a href="editpassword.html">Edit Password</a></li>
+							</ul>
 						</ul>
 				 </div>
 			</div> 
 			</div>
-			<div class="profileinfo-right col-md-6 col-lg-5 col-sm-8 col-xs-12 col-md-offset-1 col-lg-offset-2">
+			<div class="profileinfo-right col-md-9 col-lg-9 col-sm-8 col-xs-12">
 					<form class="form-area">
-						<div class="col-md-12">
+						<div class="col-md-6">
                             <label>Department Name</label>
 							<input  type="text" class="text-field-box normal borderd smoke-white">
                         </div>
-						<div class="col-md-12">
-                            <label>Description</label>
-							<textarea class="text-field-box normal borderd"></textarea>
-                        </div>
-						<div class="col-md-12">
+						<div class="col-md-6">
                             <label>Skill Name</label>
 							<div>
                                <input type="text" data-role="tagsinput" placeholder="Add Skills..." />
                             </div>
                         </div>
+						<div class="col-md-6">
+                            <label>Description</label>
+							<textarea class="text-field-box normal borderd"></textarea>
+                        </div>
+						
 						<div class="clearfix col-md-12"></div>
 						<div class="col-md-12">
-							<button type="submit" class="button-submit mrg-top-10"><i class="fa fa-check"></i>&nbsp;&nbsp;Submit</button>
+							<button type="submit" class="button-submit mrg-top-10 center-block"><i class="fa fa-check"></i>&nbsp;&nbsp;Submit</button>
 						</div>
 					</form>
 				</div>

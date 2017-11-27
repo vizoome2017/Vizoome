@@ -16,7 +16,11 @@
     <link type="text/css" rel="stylesheet" href="css/style.css"><!-- Light Theme Core CSS -->
     <link type="text/css" rel="stylesheet" href="css/custom.css"><!-- Light Theme Core CSS -->
     <!-- Google Fonts here -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<style>
+		.profileinfo-left {margin-bottom:104px;}
+		.profileinfo-right {padding:0px;}
+	</style>
 </head>
 <body>
     <div id="mask">
@@ -50,7 +54,6 @@
                             </li>
                             <li><a href="#">Talents</a>
                             	<ul class="single-item">
-								<li><a href="candidatelist.html">Browse Candidates</a></li>
                                 	<li><a href="searchtalents.html">Search Talent</a></li>
                                 	<li><a href="createvisualresume.html">Create Visual Resume</a></li>
                                 </ul>
@@ -111,7 +114,7 @@
                                         <p class="text-center maincolor"><strong>John Stevenson</strong></p>
                                         <p class="text-center small">xyz@abc.com</p>
 										<p class="divider"></p>
-                                        <a href="candidateprofile.html" class="maincolor"><strong>Edit Profile</strong></a>
+                                        <a href="#" class="maincolor"><strong>Edit Profile</strong></a>
                                         <a href="login.html" class="maincolor"><strong class="pull-right">Signout</strong></a>
                                     </div>
                                 </div>
@@ -132,7 +135,6 @@
                             </li>
                             <li><a href="#">Talents</a>
                             	<ul class="single-item">
-								<li><a href="candidatelist.html">Browse Candidates</a></li>
                                 	<li><a href="searchtalents.html">Search Talent</a></li>
                                 	<li><a href="createvisualresume.html">Create Visual Resume</a></li>
                                 </ul>
@@ -150,7 +152,7 @@
 		<div class="static-banner" style="background:url(img/banner-1.jpg) bottom center no-repeat fixed; background-size:cover;">
         	<div class="mask">
             	<div class="container">
-                	<h3 class="text-center">Candidate Profile</h3>
+                	<h3 class="text-center">Recruitment List</h3>
             	</div>
             </div>
         </div>
@@ -158,9 +160,8 @@
     </section>
 	<section class="content-area-sec">
     	<!-- Start:Login/Register Area-->
-    	<div class="container">
+		<div class="container">
 			<div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 nopaddingleftmob nopaddingrightmob">
-				
 				<div class="profileinfo-left nav-side-menu">
 				<i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
 					<div class="menu-list">
@@ -179,17 +180,17 @@
 							  </a>
 							</li>
 
-							<li data-toggle="collapse" data-target="#products" class="collapsed">
+							<li  data-toggle="collapse" data-target="#products" class="collapsed">
 							  <a href="#"><i class="fa fa-wpforms fa-lg"></i> Forms <span class="arrow"></span></a>
 							</li>
 							<ul class="sub-menu collapse" id="products">
 								<li><a href="addedform.html">Department</a></li>
 								<li><a href="viewdataform.html">Data List</a></li>
 							</ul>
-							<li  data-toggle="collapse" data-target="#recruitment" class="collapsed">
+							<li  data-toggle="collapse" data-target="#recruitment" class="collapsed active">
 							  <a href="#"><i class="fa fa-users fa-lg"></i> Recruitment <span class="arrow"></span></a>
 							</li>
-							<ul class="sub-menu collapse" id="recruitment">
+							<ul class="sub-menu collapsed in" id="recruitment">
 								<li class="subactive"><a href="recruitmentlist.html">Recruitment List</a></li>
 								<li><a href="recruitment.html">Add Recruitment</a></li>
 							</ul>
@@ -199,133 +200,98 @@
 							<li>
 							  <a href="#"><i class="fa fa-tasks fa-lg"></i> Manage Jobs</a>
 							</li>
-							 <li data-toggle="collapse" data-target="#manageaccount" class="collapsed active">
+							 <li data-toggle="collapse" data-target="#manageaccount" class="collapsed">
 							  <a href="#"><i class="fa fa-user fa-lg"></i> Manage Account <span class="arrow"></span></a>
 							</li>
-							<ul class="sub-menu collapsed in" id="manageaccount">
-								<li class="subactive"><a href="candidateprofile.html">Edit Profile</a></li>
+							<ul class="sub-menu collapse" id="manageaccount">
+								<li><a href="candidateprofile.html">Edit Profile</a></li>
 								<li><a href="editpassword.html">Edit Password</a></li>
 							</ul>
 						</ul>
 				 </div>
 			</div> 
 			</div>
-			<div class="col-md-9 col-lg-9 col-sm-8 col-xs-12">
-				<div class="profileinfo-right">
-					<div class="col-md-12">
-						<h6>Profile Details</h6>
+			<div class="profileinfo-right col-md-9 col-lg-9 col-sm-8 col-xs-12">
+				<div class="recruitmentlist">
+					<div class="table-responsive">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>Employee&nbsp;ID</th>
+									<th>Employee&nbsp;Name</th>
+									<th>Position</th>
+									<th>Department</th>
+									<th style="width:100px">Actions</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>45235</td>
+									<td>John</td>
+									<td>Team&nbsp;Leader</td>
+									<td>Web/Graphic</td>
+									<td>
+										<a href="#" class=""><span class="fa fa-edit"></span></a>
+										<a href="#" class="" data-toggle="modal" data-target=".Confirm"><span class="fa fa-trash-o"></span></a>
+									</td>
+								</tr>
+								<tr>
+									<td>75643</td>
+									<td>Employee&nbsp;02</td>
+									<td>Developer</td>
+									<td>IT</td>
+									<td>
+										<a href="#" class=""><span class="fa fa-edit"></span></a>
+										<a href="#" class="" data-toggle="modal" data-target=".Confirm"><span class="fa fa-trash-o"></span></a>
+									</td>
+								</tr>
+								<tr>
+									<td>14538</td>
+									<td>Smith</td>
+									<td>Project Manager</td>
+									<td>Accounting</td>
+									<td>
+										<a href="#" class=""><span class="fa fa-edit"></span></a>
+										<a href="#" class="" data-toggle="modal" data-target=".Confirm"><span class="fa fa-trash-o"></span></a>
+									</td>
+								</tr>
+								<tr>
+									<td>46893</td>
+									<td>Anderson</td>
+									<td>Graphic&nbsp;Designer</td>
+									<td>Web/Graphic</td>
+									<td>
+										<a href="#" class=""><span class="fa fa-edit"></span></a>
+										<a href="#" class="" data-toggle="modal" data-target=".Confirm"><span class="fa fa-trash-o"></span></a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<form class="form-area">
-						<div class="col-md-6">
-                            <label>First Name</label>
-							<input  type="text" value="John"  class="text-field-box normal borderd smoke-white">
-                        </div>
-						<div class="col-md-6">
-                            <label>Last Name</label>
-							<input  type="text" value="Stevenson" class="text-field-box normal borderd smoke-white">
-                        </div>
-						<div class="col-md-6">
-                            <label>Email Address</label>
-							<input  type="text" value="stevenson.john@abc.com" class="text-field-box normal borderd smoke-white">
-                        </div>
-						<div class="col-md-6">
-                            <label>Phone Number</label>
-							<input  type="text"  value="+14231721322"  class="text-field-box normal borderd smoke-white">
-                        </div>
-						<div class="col-md-6">
-                            <label>Gender</label>
-                            <select  class="text-field-box normal borderd smoke-white">
-                                <option selected>Male</option>
-                                <option>Female</option>
-                            </select>
-                        </div>
-						<div class="col-md-6">
-                            <label>Address</label>
-							<input  type="text" value="12th Avenue St." class="text-field-box normal borderd smoke-white">
-                        </div>
-						<div class="col-md-6">
-                            <label>City</label>
-							<input  type="text" value="City" class="text-field-box normal borderd smoke-white">
-                        </div>
-						<div class="col-md-6">
-                            <label>Country</label>
-                            <select  class="text-field-box normal borderd smoke-white">
-                                <option>Alabama</option>
-                                <option>Alaska</option>
-                                <option selected>United States</option>
-                            </select>
-                        </div>
-						<div class="col-md-6">
-                            <label>Portfolio Link (Optional)</label>
-							<input  type="text" value="" class="text-field-box normal borderd smoke-white">
-                        </div>
-						<div class="clearfix col-md-12"></div>
-						<div class="col-md-12">
-						  <div id="imageUploadForm" class="imageUploadForm">
-							<span class="helpText" id="helpText"><span class="p">Upload Your Image</span></span>
-							<input type='file' id="file" class="uploadButton" accept="image/*" />
-							<div id="uploadedImg" class="uploadedImg">
-							  <span class="unveil"></span>
-							</div>
-						  </div>
-						</div>
-						<div class="clearfix col-md-12"></div>
-						
-					</form>
-					<div class="col-md-12">
-						<h6>Career Details</h6>
-					</div>
-					<form class="form-area">
-						<div class="col-md-6">
-                            <label>Current Job Title</label>
-							<input  type="text" value="Graphic Designer"  class="text-field-box normal borderd smoke-white">
-                        </div>
-						<div class="col-md-6">
-                            <label>Category</label>
-							<input  type="text" value="Web" class="text-field-box normal borderd smoke-white">
-                        </div>
-						<div class="col-md-6">
-                            <label>Salary</label>
-                            <select  class="text-field-box normal borderd smoke-white">
-                                <option>5000-10000</option>
-                                <option>10000-15000</option>
-                                <option selected>15000-20000</option>
-                                <option>20000-25000</option>
-                                <option>25000-30000</option>
-                            </select>
-                        </div>
-						<div class="col-md-6">
-                            <label>Years of Experience</label>
-                            <select  class="text-field-box normal borderd smoke-white">
-                                <option>1 Year</option>
-                                <option>2 Years</option>
-                                <option selected>3 Years</option>
-                                <option>4 Years</option>
-                                <option>5 Years</option>
-                            </select>
-                        </div>
-						<div class="col-md-6">
-                            <label>Education Level</label>
-                            <select  class="text-field-box normal borderd smoke-white">
-                                <option>Matric/0 Level</option>
-                                <option>Intermediate/A Level</option>
-                                <option selected>Bachelor's</option>
-                                <option>Master</option>
-                            </select>
-                        </div>
-						<div class="col-md-6">
-                            <label>Brief Description (Optional)</label>
-							<textarea class="text-field-box normal borderd" placeholder="Add Your Description Here..."></textarea>
-                        </div>
-						<div class="clearfix col-md-12"></div>
-						<div class="col-md-12">
-							<button type="submit" class="button-submit"><i class="fa fa-check"></i>&nbsp;&nbsp;Update Details</button>
-						</div>
-					</form>
+				<div class="demo1"><ul class="pagination bootpag"><li data-lp="1" class="prev disabled"><a href="javascript:void(0);">«</a></li><li data-lp="1" class="active"><a href="javascript:void(0);">1</a></li><li data-lp="2"><a href="javascript:void(0);">2</a></li><li data-lp="3"><a href="javascript:void(0);">3</a></li><li data-lp="4"><a href="javascript:void(0);">4</a></li><li data-lp="2" class="next"><a href="javascript:void(0);">»</a></li></ul></div>
 				</div>
 			</div>
-		</div>
+			</div>
 	</section>
+	<div class="modal Confirm fade" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title">Delete record ?</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			<p>Do you want to delete this record ?</p>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-success">Yes, Delete!</button>
+			<button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+		  </div>
+		</div>
+	</div>
+	</div>
 	<!-- Footer Area Start 
     ====================================================== -->
     <footer class="footer-area">
@@ -340,7 +306,8 @@
     <!-- =================================================
     Footer Area End -->
     <!-- Scripts -->
-    <script type="text/javascript" src="js/jquery-2.1.1.js"></script><!-- Owl Carousel Js -->
+   <script type="text/javascript" src="js/jquery-2.1.1.js"></script> <!-- Owl Carousel Js -->
+   <script type="text/javascript" src="js/bootbox.min.js"></script> <!-- Owl Carousel Js -->
     <script type="text/javascript" src="js/owl.carousel.js"></script><!-- Owl Carousel Js -->
     <script type="text/javascript" src="js/owl-carousel-settings.js"></script><!-- Owl Carousel Settings Js -->
     <script type="text/javascript" src="js/jquery.flexslider.js"></script><!-- Flexslider Settings Js -->
@@ -350,34 +317,5 @@
     <script type="text/javascript" src="js/featherlight.min.js" ></script><!-- Feather-Lightbox (projects) Js -->
     <script type="text/javascript" src="js/forms.js"></script><!-- Form Js -->
     <script type="text/javascript" src="js/animation.js" ></script><!-- Animation Js -->
-	<script>
-		function readURL(input) {
-  if (input.files && input.files[0]) {
-    var reader = new FileReader();
-
-    reader.onload = function (e) {
-            $uploadedImg[0].style.backgroundImage='url('+e.target.result+')';
-    };
-
-    reader.readAsDataURL(input.files[0]);
-  }
-}
-
-var $form = $("#imageUploadForm"), 
-    $file = $("#file"), 
-    $uploadedImg = $("#uploadedImg"), 
-    $helpText = $("#helpText")
-;
-$file.on('change', function(){
-  readURL(this);
-  $form.addClass('loading');
-});
-$uploadedImg.on('webkitAnimationEnd MSAnimationEnd oAnimationEnd animationend', function(){
-  $form.addClass('loaded');
-});
-$helpText.on('webkitAnimationEnd MSAnimationEnd oAnimationEnd animationend', function(){
-  
-});
-	</script>
 </body>
 </html>
