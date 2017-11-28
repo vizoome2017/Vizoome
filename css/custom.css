@@ -1748,6 +1748,7 @@ form .button-normal { padding: 7px 12px; margin-bottom: 10px; margin-right:0px;}
     width: 100%;
     margin-bottom: 10px;
   }
+  .profileinfo-left {margin-bottom:10px !important;}
   .nav-side-menu .toggle-btn {
     display: block;
     cursor: pointer;
@@ -1875,6 +1876,12 @@ form .button-normal { padding: 7px 12px; margin-bottom: 10px; margin-right:0px;}
   #side-panel-menu ul li a {font-family: 'Raleway', sans-serif ;}
   .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {background-color:#33CCFF; border-color:#33CCFF;}
   .sub-menu {background-color:#f5f5f5; padding-left:40px !important;}
+  
+  .searcharea {overflow:hidden;}
+  .searchbar {overflow:hidden; position:relative;}
+  .searchbar i{position:absolute; right:10px; top:1px;}
+  .searchbar input {border:1px solid #ccc; margin:10px 0;}
+  .searcharea button {margin:10px 0;}
   
   /*17-11-17*/
   .mrg-rgt-10{margin-right:10px;}
@@ -2099,3 +2106,4 @@ textarea {background-color:#f8f8f8 !important;}
 .jobcard p {color:#333; font-size:14px;}
 .jobcard .company {color:#999; font-size:14px;}
 .jobcard button {margin-top:15px;}
+
