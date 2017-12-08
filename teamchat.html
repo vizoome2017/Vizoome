@@ -15,7 +15,6 @@
     <link type="text/css" rel="stylesheet" href="css/flexslider.css"><!-- FlexSlider CSS -->
     <link type="text/css" rel="stylesheet" href="css/datepicker.css"><!-- FlexSlider CSS -->
 	<link href="https://code.jquery.com/ui/1.8.24/themes/blitzer/jquery-ui.css" rel="stylesheet" type="text/css" />
-	<link rel="canonical" href="https://codepen.io/emilcarlsson/pen/ZOQZaV?limit=all&page=74&q=contact+" />
     <link type="text/css" rel="stylesheet" href="css/style.css"><!-- Light Theme Core CSS -->
     <link type="text/css" rel="stylesheet" href="css/custom.css"><!-- Light Theme Core CSS -->
     <!-- Google Fonts here -->
@@ -216,7 +215,6 @@
 		<div class="message-input">
 			<div class="wrap">
 			<input type="text" placeholder="Write your message..." />
-			<i class="fa fa-paperclip attachment" aria-hidden="true"></i>
 			<button class="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
 			</div>
 		</div>
@@ -305,8 +303,6 @@
     <script type="text/javascript" src="js/animation.js" ></script><!-- Animation Js -->
     <script type="text/javascript" src="js/bootstrap-datepicker.js" ></script><!-- Animation Js -->
     <script src="http://code.jquery.com/ui/1.8.24/jquery-ui.min.js" type="text/javascript"></script>
-	<script src="https://use.typekit.net/hoy3lrg.js"></script>
-	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	<script type="text/javascript">
 	$(function () {
 		$("#dvSource .jobs-card").draggable({
@@ -375,7 +371,7 @@ function newMessage() {
 	$('<li class="sent"><img src="img/profile.png" alt="" /><p>' + message + '</p></li>').appendTo($('.messages ul'));
 	$('.message-input input').val(null);
 	$('.contact.active .preview').html('<span>You: </span>' + message);
-	$(".messages").animate({ scrollTop: $(document).height() }, "fast");
+	$(".messages").animate({ scrollTop: $(document).height()+100000000 }, "fast");
 };
 
 $('.submit').click(function() {

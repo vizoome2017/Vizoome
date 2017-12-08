@@ -12,14 +12,14 @@
     <link type="text/css" rel="stylesheet" href="css/bootstrap.css"><!-- Bootstrap -->
     <link type="text/css" rel="stylesheet" href="css/font-awesome.css"><!-- font-awesome -->
     <link type="text/css" rel="stylesheet" href="css/animate.min.css"><!-- Animation -->
+	<link type="text/css" rel="stylesheet" href="css/datepicker.css"><!-- FlexSlider CSS -->
     <link type="text/css" rel="stylesheet" href="css/flexslider.css"><!-- FlexSlider CSS -->
     <link type="text/css" rel="stylesheet" href="css/style.css"><!-- Light Theme Core CSS -->
     <link type="text/css" rel="stylesheet" href="css/custom.css"><!-- Light Theme Core CSS -->
     <!-- Google Fonts here -->
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<style>
-		.profileinfo-left {margin-bottom:104px;}
-		.profileinfo-right {padding:0px;}
+		.profileinfo-left {margin-bottom:154px;}
 	</style>
 </head>
 <body>
@@ -54,6 +54,7 @@
                             </li>
                             <li><a href="#">Talents</a>
                             	<ul class="single-item">
+								<li><a href="candidatelist.html">Browse Candidates</a></li>
                                 	<li><a href="searchtalents.html">Search Talent</a></li>
                                 	<li><a href="createvisualresume.html">Create Visual Resume</a></li>
                                 </ul>
@@ -87,8 +88,8 @@
                                         <p class="text-left maincolor"><strong>John Stevenson</strong></p>
                                         <p class="text-left small">xyz@abc.com</p>
 										<p class="divider"></p>
-                                        <a href="candidateprofile.html" class="pull-left maincolor"><strong>Edit Profile<strong></a>
-                                        <a href="login.html" class="pull-right maincolor"><strong>Signout<strong></a>
+                                        <a href="candidateprofile.html" class="pull-left maincolor"><strong>Edit Profile</strong></a>
+                                        <a href="login.html" class="pull-right maincolor"><strong>Signout</strong></a>
                                     </div>
                                 </div>
                             </div>
@@ -114,7 +115,7 @@
                                         <p class="text-center maincolor"><strong>John Stevenson</strong></p>
                                         <p class="text-center small">xyz@abc.com</p>
 										<p class="divider"></p>
-                                        <a href="#" class="maincolor"><strong>Edit Profile</strong></a>
+                                        <a href="candidateprofile.html" class="maincolor"><strong>Edit Profile</strong></a>
                                         <a href="login.html" class="maincolor"><strong class="pull-right">Signout</strong></a>
                                     </div>
                                 </div>
@@ -135,6 +136,7 @@
                             </li>
                             <li><a href="#">Talents</a>
                             	<ul class="single-item">
+								<li><a href="candidatelist.html">Browse Candidates</a></li>
                                 	<li><a href="searchtalents.html">Search Talent</a></li>
                                 	<li><a href="createvisualresume.html">Create Visual Resume</a></li>
                                 </ul>
@@ -147,12 +149,12 @@
         
         </div>
     </header>
-<section class="main-banner inner-page">
+	<section class="main-banner inner-page">
     	<!-- Start:Static area -->
 		<div class="static-banner" style="background:url(img/banner-1.jpg) bottom center no-repeat fixed; background-size:cover;">
         	<div class="mask">
             	<div class="container">
-                	<h3 class="text-center">Recruitment List</h3>
+                	<h3 class="text-center">Manage Jobs</h3>
             	</div>
             </div>
         </div>
@@ -167,11 +169,14 @@
 					<div class="menu-list">
 						<div class="profilebasicinfo">
 							<div class="image">
-								<img src="img/profile.png" class="center-block"/>
+								<img src="img/profile6.jpg" class="center-block"/>
 							</div>
 							<h6 class="text-center">John Stevenson</h6>
 							<p class="text-center">User</p>
 						</div>
+						<hr class="hr-jobs"/>
+						<p class="views">971</p>
+						<p class="whoview">Who's viewed your profile</p>
 						<hr class="hr-jobs"/>
 						<ul id="menu-content" class="menu-content collapse out">
 							<li>
@@ -180,118 +185,114 @@
 							  </a>
 							</li>
 
-							<li  data-toggle="collapse" data-target="#products" class="collapsed">
+							<li data-toggle="collapse" data-target="#products">
 							  <a href="#"><i class="fa fa-wpforms fa-lg"></i> Hiring Team <span class="arrow"></span></a>
 							</li>
 							<ul class="sub-menu collapse" id="products">
 								<li><a href="teamname.html">Team</a></li>
 								<li><a href="viewdataform.html">Hiring Team List</a></li>
 							</ul>
-							<li  data-toggle="collapse" data-target="#recruitment" class="collapsed active">
-							  <a href="#"><i class="fa fa-users fa-lg"></i> Recruitment <span class="arrow"></span></a>
-							</li>
-							<ul class="sub-menu collapsed in" id="recruitment">
-								<li class="subactive"><a href="recruitmentlist.html">Recruitment List</a></li>
-								<li><a href="recruitment.html">Add Recruitment</a></li>
-							</ul>
 							<li>
 							  <a href="myresumes.html"><i class="fa fa-file-word-o fa-lg"></i> My Resumes</a>
 							</li>  
-							<li>
-							  <a href="managejobs.html"><i class="fa fa-tasks fa-lg"></i> Manage Jobs</a>
+							<li class="active">
+							  <a href="#"><i class="fa fa-tasks fa-lg"></i> Manage Jobs</a>
 							</li>
-							 <li data-toggle="collapse" data-target="#manageaccount" class="collapsed">
-							  <a href="#"><i class="fa fa-user fa-lg"></i> Manage Account <span class="arrow"></span></a>
-							</li>
-							<ul class="sub-menu collapse" id="manageaccount">
-								<li><a href="candidateprofile.html">Edit Profile</a></li>
-								<li><a href="editpassword.html">Edit Password</a></li>
-							</ul>
+							 <li>
+							  <a href="candidateprofile.html">
+							  <i class="fa fa-user fa-lg"></i> Manage Account
+							  </a>
+							  </li>
 						</ul>
 				 </div>
 			</div> 
 			</div>
 			<div class="profileinfo-right col-md-9 col-lg-9 col-sm-8 col-xs-12">
-				<div class="recruitmentlist">
+				<div class="managejobs">
+					<h5>Shortlisted Jobs</h5>
 					<div class="table-responsive">
-						<table class="table table-striped">
+						<table class="table">
 							<thead>
 								<tr>
-									<th>Employee&nbsp;ID</th>
-									<th>Employee&nbsp;Name</th>
-									<th>Position</th>
-									<th>Department</th>
-									<th style="width:100px">Actions</th>
+									<th>Job Title</th>
+									<th>Company Name</th>
+									<th>Interview Date</th>
+									<th></th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<td>45235</td>
-									<td>John</td>
-									<td>Team&nbsp;Leader</td>
-									<td>Web/Graphic</td>
-									<td>
-										<a href="#" class=""><span class="fa fa-edit"></span></a>
-										<a href="#" class="" data-toggle="modal" data-target=".Confirm"><span class="fa fa-trash-o"></span></a>
-									</td>
+									<td>Web Designer</td>
+									<td>Company 1</td>
+									<td>24 Jan 2018</td>
+									<td><a href="#" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash delete"></i></a></td>
 								</tr>
 								<tr>
-									<td>75643</td>
-									<td>Employee&nbsp;02</td>
-									<td>Developer</td>
-									<td>IT</td>
-									<td>
-										<a href="#" class=""><span class="fa fa-edit"></span></a>
-										<a href="#" class="" data-toggle="modal" data-target=".Confirm"><span class="fa fa-trash-o"></span></a>
-									</td>
-								</tr>
-								<tr>
-									<td>14538</td>
-									<td>Smith</td>
-									<td>Project Manager</td>
-									<td>Accounting</td>
-									<td>
-										<a href="#" class=""><span class="fa fa-edit"></span></a>
-										<a href="#" class="" data-toggle="modal" data-target=".Confirm"><span class="fa fa-trash-o"></span></a>
-									</td>
-								</tr>
-								<tr>
-									<td>46893</td>
-									<td>Anderson</td>
-									<td>Graphic&nbsp;Designer</td>
-									<td>Web/Graphic</td>
-									<td>
-										<a href="#" class=""><span class="fa fa-edit"></span></a>
-										<a href="#" class="" data-toggle="modal" data-target=".Confirm"><span class="fa fa-trash-o"></span></a>
-									</td>
+									<td>SEO Analyst</td>
+									<td>Company 5</td>
+									<td>17 Dec 2017</td>
+									<td><a href="#" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash delete"></i></a></td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
-				<div class="demo1"><ul class="pagination bootpag"><li data-lp="1" class="prev disabled"><a href="javascript:void(0);">«</a></li><li data-lp="1" class="active"><a href="javascript:void(0);">1</a></li><li data-lp="2"><a href="javascript:void(0);">2</a></li><li data-lp="3"><a href="javascript:void(0);">3</a></li><li data-lp="4"><a href="javascript:void(0);">4</a></li><li data-lp="2" class="next"><a href="javascript:void(0);">»</a></li></ul></div>
+					<hr class="hr-jobs"/>
+					<h5>Jobs Applied</h5>
+					<div class="table-responsive">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>JobTitle</th>
+									<th>Company Name</th>
+									<th>Date Applied</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Front-End Developer</td>
+									<td>Company 02</td>
+									<td>30 Jun 2017</td>
+									<td><a href="#" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash delete"></i></a></td>
+								</tr>
+								<tr>
+									<td>Graphic Designer</td>
+									<td>Comapny 04</td>
+									<td>13 Mar 2017</td>
+									<td><a href="#" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash delete"></i></a></td>
+								</tr>
+								<tr>
+									<td>Digital Marketing</td>
+									<td>Comapny 04</td>
+									<td>24 Sep 2017</td>
+									<td><a href="#" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash delete"></i></a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<hr class="hr-jobs"/>
+					<h5>Jobs Notifications</h5>
+					<div class="notification">
+						<label class="col-md-5 nopaddingleft nopaddingright">Email Notifications</label>
+						<div class="col-md-7 nopaddingleft nopaddingright switch">
+							<input type="checkbox" id="switch" checked /><label for="switch">Toggle</label>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="notification">
+						<label class="col-md-5 nopaddingleft nopaddingright">Message Notifications</label>
+						<div class="col-md-7 nopaddingleft nopaddingright switch">
+							<input type="checkbox" id="switch2" /><label for="switch2">Toggle</label>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="col-md-12 text-center center-block">
+					<button type="submit" class="button-submit submit-btn">Confirm&nbsp;All&nbsp;Changes</button>
 				</div>
 			</div>
-			</div>
-	</section>
-	<div class="modal Confirm fade" tabindex="-1" role="dialog">
-	  <div class="modal-dialog" role="document">
-		<div class="modal-content">
-		  <div class="modal-header">
-			<h5 class="modal-title">Delete record ?</h5>
-			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			  <span aria-hidden="true">&times;</span>
-			</button>
-		  </div>
-		  <div class="modal-body">
-			<p>Do you want to delete this record ?</p>
-		  </div>
-		  <div class="modal-footer">
-			<button type="button" class="btn btn-success">Yes, Delete!</button>
-			<button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
-		  </div>
 		</div>
-	</div>
-	</div>
+	</section>
 	<!-- Footer Area Start 
     ====================================================== -->
     <footer class="footer-area">
@@ -306,8 +307,7 @@
     <!-- =================================================
     Footer Area End -->
     <!-- Scripts -->
-   <script type="text/javascript" src="js/jquery-2.1.1.js"></script> <!-- Owl Carousel Js -->
-   <script type="text/javascript" src="js/bootbox.min.js"></script> <!-- Owl Carousel Js -->
+    <script type="text/javascript" src="js/jquery-2.1.1.js"></script><!-- Owl Carousel Js -->
     <script type="text/javascript" src="js/owl.carousel.js"></script><!-- Owl Carousel Js -->
     <script type="text/javascript" src="js/owl-carousel-settings.js"></script><!-- Owl Carousel Settings Js -->
     <script type="text/javascript" src="js/jquery.flexslider.js"></script><!-- Flexslider Settings Js -->
@@ -317,5 +317,150 @@
     <script type="text/javascript" src="js/featherlight.min.js" ></script><!-- Feather-Lightbox (projects) Js -->
     <script type="text/javascript" src="js/forms.js"></script><!-- Form Js -->
     <script type="text/javascript" src="js/animation.js" ></script><!-- Animation Js -->
+    <script type="text/javascript" src="js/bootstrap-tagsinput.js" ></script><!-- Animation Js -->
+	<script type="text/javascript" src="js/bootstrap-datepicker.js" ></script><!-- Animation Js -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	$('#dp2').datepicker();
+	$('#dp3').datepicker();
+		
+	});
+	</script>
+	<script>
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+	<script>
+	//Reference: 
+//https://www.onextrapixel.com/2012/12/10/how-to-create-a-custom-file-input-with-jquery-css3-and-php/
+;(function($) {
+
+		  // Browser supports HTML5 multiple file?
+		  var multipleSupport = typeof $('<input/>')[0].multiple !== 'undefined',
+		      isIE = /msie/i.test( navigator.userAgent );
+
+		  $.fn.customFile = function() {
+
+		    return this.each(function() {
+
+		      var $file = $(this).addClass('custom-file-upload-hidden'), // the original file input
+		          $wrap = $('<div class="file-upload-wrapper">'),
+		          $input = $('<input type="text" class="file-upload-input" placeholder="videoresume.mp4" />'),
+		          // Button that will be used in non-IE browsers
+		          $button = $('<button type="button" class="file-upload-button">Update Resume</button>'),
+		          // Hack for IE
+		          $label = $('<label class="file-upload-button" for="'+ $file[0].id +'">Update Resume</label>');
+
+		      // Hide by shifting to the left so we
+		      // can still trigger events
+		      $file.css({
+		        position: 'absolute',
+		        left: '-9999px'
+		      });
+
+		      $wrap.insertAfter( $file )
+		        .append( $file, $input, ( isIE ? $label : $button ) );
+
+		      // Prevent focus
+		      $file.attr('tabIndex', -1);
+		      $button.attr('tabIndex', -1);
+
+		      $button.click(function () {
+		        $file.focus().click(); // Open dialog
+		      });
+
+		      $file.change(function() {
+
+		        var files = [], fileArr, filename;
+
+		        // If multiple is supported then extract
+		        // all filenames from the file array
+		        if ( multipleSupport ) {
+		          fileArr = $file[0].files;
+		          for ( var i = 0, len = fileArr.length; i < len; i++ ) {
+		            files.push( fileArr[i].name );
+		          }
+		          filename = files.join(', ');
+
+		        // If not supported then just take the value
+		        // and remove the path to just show the filename
+		        } else {
+		          filename = $file.val().split('\\').pop();
+		        }
+
+		        $input.val( filename ) // Set the value
+		          .attr('title', filename) // Show filename in title tootlip
+		          .focus(); // Regain focus
+
+		      });
+
+		      $input.on({
+		        blur: function() { $file.trigger('blur'); },
+		        keydown: function( e ) {
+		          if ( e.which === 13 ) { // Enter
+		            if ( !isIE ) { $file.trigger('click'); }
+		          } else if ( e.which === 8 || e.which === 46 ) { // Backspace & Del
+		            // On some browsers the value is read-only
+		            // with this trick we remove the old input and add
+		            // a clean clone with all the original events attached
+		            $file.replaceWith( $file = $file.clone( true ) );
+		            $file.trigger('change');
+		            $input.val('');
+		          } else if ( e.which === 9 ){ // TAB
+		            return;
+		          } else { // All other keys
+		            return false;
+		          }
+		        }
+		      });
+
+		    });
+
+		  };
+
+		  // Old browser fallback
+		  if ( !multipleSupport ) {
+		    $( document ).on('change', 'input.customfile', function() {
+
+		      var $this = $(this),
+		          // Create a unique ID so we
+		          // can attach the label to the input
+		          uniqId = 'customfile_'+ (new Date()).getTime(),
+		          $wrap = $this.parent(),
+
+		          // Filter empty input
+		          $inputs = $wrap.siblings().find('.file-upload-input')
+		            .filter(function(){ return !this.value }),
+
+		          $file = $('<input type="file" id="'+ uniqId +'" name="'+ $this.attr('name') +'"/>');
+
+		      // 1ms timeout so it runs after all other events
+		      // that modify the value have triggered
+		      setTimeout(function() {
+		        // Add a new input
+		        if ( $this.val() ) {
+		          // Check for empty fields to prevent
+		          // creating new inputs when changing files
+		          if ( !$inputs.length ) {
+		            $wrap.after( $file );
+		            $file.customFile();
+		          }
+		        // Remove and reorganize inputs
+		        } else {
+		          $inputs.parent().remove();
+		          // Move the input so it's always last on the list
+		          $wrap.appendTo( $wrap.parent() );
+		          $wrap.find('input').focus();
+		        }
+		      }, 1);
+
+		    });
+		  }
+
+}(jQuery));
+
+$('input[type=file]').customFile();
+	</script>
 </body>
 </html>
