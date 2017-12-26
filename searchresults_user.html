@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Vizoome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Vizoome - Visual Resume">
+    <meta name="keywords" content="Vizoome Home, Vizoome, vizoomehome">
+    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Core CSS -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css"><!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.css"><!-- font-awesome -->
+    <link type="text/css" rel="stylesheet" href="css/animate.min.css"><!-- Animation -->
+    <link type="text/css" rel="stylesheet" href="css/flexslider.css"><!-- FlexSlider CSS -->
+    <link type="text/css" rel="stylesheet" href="css/style.css"><!-- Light Theme Core CSS -->
+    <link type="text/css" rel="stylesheet" href="css/custom.css"><!-- Light Theme Core CSS -->
+    <!-- Google Fonts here -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+    <div id="mask">
+        <div id="loader">      
+        </div>
+    </div>
+    <!-- =================================================
+    Preloader Area End -->
+    <!-- Header Area Start 
+    ====================================================== -->
+   <header class="header-area">
+    	<div class="container-fluid">
+        	<!-- Start: Top Logo Area -->
+            <div class="col-md-2 left-side">
+            	<div class="logo"><a href="index.html"><h3>Vizoo<span>me</span></h3></a></div>
+            </div>
+            <!-- End: Top Logo Area -->
+            
+        	<!-- Start:Main Navigation -->
+            <div class="col-md-7 col-lg-7 hidden-sm">
+            	<div class="menu-bar">
+            		<nav>
+                        <ul class="menu">
+                        	<li><a href="loggedin.html">Home</a></li>
+                        	<li><a href="#">About Us</a></li>
+							<li><a href="#">Jobs</a>
+                            	<ul class="single-item">
+                                	<li><a href="searchjobs.html">Search Jobs</a></li>
+                                	<li><a href="postopportunities.html">Post Job</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Talents</a>
+                            	<ul class="single-item">
+								<li><a href="candidatelist.html">Browse Candidates</a></li>
+                                	<li><a href="searchtalents.html">Search Talent</a></li>
+                                	<li><a href="createvisualresume.html">Create Visual Resume</a></li>
+                                </ul>
+                            </li>
+							<li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                	</nav>
+                </div>
+            </div>
+			<!-- <div class="col-md-4 col-xs-12 col-lg-4 col-sm-4 hidden-xs rightmenu">
+				<ul class="">
+                     <li><a href="login.html" class="button-medium"><i class="fa fa-sign-in"></i>&nbsp;&nbsp;Login</a></li>
+                     <li><a href="join.html" class="button-medium"><i class="fa fa-user"></i>&nbsp;&nbsp;Signup</a></li>
+                     <li><a href="employerlogin.html" class="button-medium"><i class="fa fa-group"></i>&nbsp;&nbsp;Employer Login</a></li>
+				</ul>
+			</div> -->
+			<div class="col-md-3 col-lg-3 hidden-sm hidden-xs">
+			<ul class="nav navbar-nav pull-right profile-settings">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="profilepic"><img src="img/profile.png"/></span> 
+                        <strong>John Stevenson</strong>
+                        <i class="fa fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="navbar-login">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12">
+                                        <p class="text-left maincolor"><strong>John Stevenson</strong></p>
+                                        <p class="text-left small">xyz@abc.com</p>
+										<p class="divider"></p>
+                                        <a href="candidateprofile.html" class="pull-left maincolor"><strong>Edit Profile<strong></a>
+                                        <a href="login.html" class="pull-right maincolor"><strong>Signout<strong></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+			</div>
+            <!-- End:Main Navigation -->
+            
+            <!-- Start:Mobile Navigation -->
+            <div class="mob-icon"><i class="fa fa-bars"></i></div>
+            <div id="side-panel-menu">
+				<div class="col-xs-12">
+			<ul class="nav navbar-nav profile-settings">
+                <li class="dropdown text-center">
+                        <span class="profilepic"><img src="img/profile.png"/></span> 
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="navbar-login">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12">
+                                        <p class="text-center maincolor"><strong>John Stevenson</strong></p>
+                                        <p class="text-center small">xyz@abc.com</p>
+										<p class="divider"></p>
+                                        <a href="candidateprofile.html" class="maincolor"><strong>Edit Profile</strong></a>
+                                        <a href="login.html" class="maincolor"><strong class="pull-right">Signout</strong></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+			</div>
+				<ul>
+                        	<li><a href="loggedin.html">Home</a></li>
+                        	<li><a href="#">About Us</a></li>
+							<li><a href="#">Jobs</a>
+                            	<ul class="single-item">
+                                	<li><a href="searchjobs.html">Search Jobs</a></li>
+                                	<li><a href="postopportunities.html">Post Job</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Talents</a>
+                            	<ul class="single-item">
+								<li><a href="candidatelist.html">Browse Candidates</a></li>
+                                	<li><a href="searchtalents.html">Search Talent</a></li>
+                                	<li><a href="createvisualresume.html">Create Visual Resume</a></li>
+                                </ul>
+                            </li>
+							<li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+			</div>
+            <!-- End:Mobile Navigation -->
+        
+        </div>
+    </header>
+<section class="main-banner inner-page">
+    	<!-- Start:Static area -->
+		<div class="static-banner" style="background:url(img/banner-1.jpg) bottom center no-repeat fixed; background-size:cover;">
+        	<div class="mask">
+            	<div class="container">
+                	<h3 class="text-center">Search Results</h3>
+            	</div>
+            </div>
+        </div>
+        <!-- End:Static area -->
+    </section>
+	<section class="content-area-sec">
+    	<!-- Start:Login/Register Area-->
+    	<div class="container">
+			<div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 nopaddingleftmob nopaddingrightmob">
+				<div class="profileinfo-left nav-side-menu">
+				<i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+					<div class="menu-list">
+						<div class="profilebasicinfo">
+							<div class="image">
+								<img src="img/profile6.jpg" class="center-block"/>
+							</div>
+							<h6 class="text-center">John Stevenson</h6>
+							<p class="text-center">User</p>
+						</div>
+						<hr class="hr-jobs"/>
+						<p class="views">971</p>
+						<p class="whoview">Who's viewed your profile</p>
+						<hr class="hr-jobs"/>
+						<ul id="menu-content" class="menu-content collapse out">
+							<li>
+							  <a href="#">
+							  <i class="fa fa-dashboard fa-lg"></i> Dashboard
+							  </a>
+							</li>
+							<li data-toggle="collapse" data-target="#products">
+							  <a href="#"><i class="fa fa-wpforms fa-lg"></i> Forms <span class="arrow"></span></a>
+							</li>
+							<ul class="sub-menu collapse" id="products">
+								<li><a href="addedform.html">Department</a></li>
+								<li><a href="viewdataform.html">Data List</a></li>
+							</ul>
+							<li>
+							  <a href="myresumes.html"><i class="fa fa-file-word-o fa-lg"></i> My Resumes</a>
+							</li>  
+							<li>
+							  <a href="#"><i class="fa fa-tasks fa-lg"></i> Manage Jobs</a>
+							</li>
+							 <li>
+							  <a href="candidateprofile.html">
+							  <i class="fa fa-user fa-lg"></i> Manage Account
+							  </a>
+							  </li>
+						</ul>
+				 </div>
+			</div> 
+			</div>
+			<div class="col-md-6 col-lg-6 col-sm-4 col-xs-12">
+				<div class="profileinfo-right">
+					<div class="searchresults">
+						<div class="resultcard2">
+							<div class="col-md-2 col-lg-2 col-sm-4 col-xs-4 nopaddingright nopaddingleft">
+								<div class="image">
+									<img src="img/vectors-market.jpg"/>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-6 col-sm-4 col-xs-8 nopaddingright nopaddingleft">
+								<div class="resultdetails">
+									<h5>Vector Market</h5>
+									<h6>Software Company</h6>
+								</div>
+							</div>
+							<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 nopaddingright nopaddingleft">
+								<p class="posteddate"><i class="fa fa-calendar"></i>&nbsp;Updated on Jan 20,2017</p>
+							</div>
+							<div class="clearfix"></div>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							<a href="#" class="pull-right">Read more...</a>
+						</div>
+						<div class="resultcard2">
+							<div class="col-md-2 col-lg-2 col-sm-4 col-xs-4 nopaddingright nopaddingleft">
+								<div class="image">
+									<img src="img/company02.jpg"/>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-6 col-sm-4 col-xs-8 nopaddingright nopaddingleft">
+								<div class="resultdetails">
+									<h5>Senior Developer</h5>
+									<h6>Vectors Market</h6>
+								</div>
+							</div>
+							<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 nopaddingright nopaddingleft">
+								<p class="posteddate"><i class="fa fa-calendar"></i>&nbsp;Posted on Aug 17,2017</p>
+							</div>
+							<div class="clearfix"></div>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							<p class="minreqs">Minimum requirements&nbsp;:</p>
+							<ul>
+								<li>Knowledge of programming languages like HTML, JavaScript, CSS, C++...etc</li>
+								<li>Good communication skills</li>
+								<li>Ability to do multi-tasks</li>
+							</ul>
+							<a href="#" class="pull-right">Read more...</a>
+						</div>
+						<div class="resultcard2">
+							<div class="col-md-2 col-lg-2 col-sm-4 col-xs-4 nopaddingright nopaddingleft">
+								<div class="image">
+									<img src="img/profile2.jpg"/>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-6 col-sm-4 col-xs-8 nopaddingright nopaddingleft">
+								<div class="resultdetails">
+									<h5>User Name</h5>
+									<h6>Web Developer&nbsp;(Vectors Market)</h6>
+								</div>
+							</div>
+							<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 nopaddingright nopaddingleft">
+								<p class="posteddate"><i class="fa fa-calendar"></i>&nbsp;Posted on Oct 17,2017</p>
+							</div>
+							<div class="clearfix"></div>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							<img src="img/company09.jpg" class="center-block" />
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							<a href="#" class="pull-right">Read more...</a>
+						</div>
+						<div class="resultcard2">
+							<div class="col-md-2 col-lg-2 col-sm-4 col-xs-4 nopaddingright nopaddingleft">
+								<div class="image">
+									<img src="img/profile4.jpg"/>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-6 col-sm-4 col-xs-8 nopaddingright nopaddingleft">
+								<div class="resultdetails">
+									<h5>User Name</h5>
+									<h6>Project Manager&nbsp;(Vectors Market)</h6>
+								</div>
+							</div>
+							<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 nopaddingright nopaddingleft">
+								<p class="posteddate"><i class="fa fa-calendar"></i>&nbsp;Posted on Oct 27,2017</p>
+							</div>
+							<div class="clearfix"></div>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							<img src="img/home-blog-2.jpg" class="center-block" />
+							<a href="#" class="pull-right">Read more...</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+				<div class="profileinfo-right">
+					<div class="latestposts">
+						<h6>Recommeded Jobs</h6>
+						<div class="post">
+							<div class="image">
+								<img src="img/company01.jpg"/>
+							</div>
+							<div class="postdetails">
+								<p>Senior Engineer</p>
+								<p>Company Name</p>
+							</div>
+							<p class="postdesc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+							<a href="#" class="pull-right">Read more...</a>
+						</div>
+						<hr class="hr-posts"/>
+						<div class="post">
+							<div class="image">
+								<img src="img/company06.jpg"/>
+							</div>
+							<div class="postdetails">
+								<p>Web Designer</p>
+								<p>Company Name</p>
+							</div>
+							<p class="postdesc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+							<a href="#" class="pull-right">Read more...</a>
+						</div>
+						<hr class="hr-posts"/>
+						<div class="post">
+							<div class="image">
+								<img src="img/vectors-market.jpg"/>
+							</div>
+							<div class="postdetails">
+								<p>Graphic Designer</p>
+								<p>Vectors Market</p>
+							</div>
+							<p class="postdesc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+							<a href="#" class="pull-right">Read more...</a>
+						</div>
+						<hr class="hr-posts"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer Area Start 
+    ====================================================== -->
+    <footer class="footer-area">
+        <!-- End:copyright area -->
+        <div class="copyright">
+        	<div class="container">
+            	<p><span>© Vizoome 2017.</span> All Rights Reserved. </p>
+            </div>
+        </div>
+        <!-- End:copyright area -->
+    </footer>
+    <!-- =================================================
+    Footer Area End -->
+    <!-- Scripts -->
+    <script type="text/javascript" src="js/jquery-2.1.1.js"></script><!-- Owl Carousel Js -->
+    <script type="text/javascript" src="js/owl.carousel.js"></script><!-- Owl Carousel Js -->
+    <script type="text/javascript" src="js/owl-carousel-settings.js"></script><!-- Owl Carousel Settings Js -->
+    <script type="text/javascript" src="js/jquery.flexslider.js"></script><!-- Flexslider Settings Js -->
+	<script type="text/javascript" src="js/mini-grid.js"></script><!-- Mini Master Grid Js -->
+    <script type="text/javascript" src="js/settings.js"></script><!-- Settings Js -->
+    <script type="text/javascript" src="js/bootstrap.js"></script><!-- Bootstrap Js -->
+    <script type="text/javascript" src="js/featherlight.min.js" ></script><!-- Feather-Lightbox (projects) Js -->
+    <script type="text/javascript" src="js/forms.js"></script><!-- Form Js -->
+    <script type="text/javascript" src="js/animation.js" ></script><!-- Animation Js -->
+	<script>
+		function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+            $uploadedImg[0].style.backgroundImage='url('+e.target.result+')';
+    };
+
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+var $form = $("#imageUploadForm"), 
+    $file = $("#file"), 
+    $uploadedImg = $("#uploadedImg"), 
+    $helpText = $("#helpText")
+;
+$file.on('change', function(){
+  readURL(this);
+  $form.addClass('loading');
+});
+$uploadedImg.on('webkitAnimationEnd MSAnimationEnd oAnimationEnd animationend', function(){
+  $form.addClass('loaded');
+});
+$helpText.on('webkitAnimationEnd MSAnimationEnd oAnimationEnd animationend', function(){
+  
+});
+	</script>
+</body>
+</html>
