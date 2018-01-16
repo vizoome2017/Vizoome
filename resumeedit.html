@@ -232,7 +232,7 @@
 					</div>
 					<h5>Education Levels</h5>
 					<div class="table-responsive">
-						<table class="table">
+						<table class="table EditableTable">
 							<thead>
 								<tr>
 									<th>Qualification(s)</th>
@@ -246,7 +246,7 @@
 									<td>Master in Fine Arts and Design</td>
 									<td>24 May 2014</td>
 									<td>University of Birmingham</td>
-									<td><a href="#" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit edit"></i></a><a href="#" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash delete"></i></a></td>
+									
 								</tr>
 								<tr>
 									<td><input type="text" class="text-field-box normal borderd smoke-white" placeholder="Qualification"></td>
@@ -254,7 +254,6 @@
 										<input  type="text"  class="text-field-box normal span2 borderd smoke-white" placeholder="Completion Date" id="dp2">
 									</td>
 									<td><input type="text" class="text-field-box normal borderd smoke-white" placeholder="School/University"></td>
-									<td><a href="#"><i class="fa fa-refresh refresh"></i></a></td>
 								</tr>
 							</tbody>
 						</table>
@@ -263,7 +262,7 @@
 					<hr class="hr-jobs"/>
 					<h5>Work Experience</h5>
 					<div class="table-responsive">
-						<table class="table">
+						<table class="table EditableTable">
 							<thead>
 								<tr>
 									<th>JobTitle(s)</th>
@@ -277,13 +276,13 @@
 									<td>UI Developer</td>
 									<td>4 Years</td>
 									<td>Company 01</td>
-									<td><a href="#" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit edit"></i></a><a href="#" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash delete"></i></a></td>
+									
 								</tr>
 								<tr>
 									<td>Graphic Designer</td>
 									<td>1 Year</td>
 									<td>Company 04</td>
-									<td><a href="#" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit edit"></i></a><a href="#" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash delete"></i></a></td>
+									
 								</tr>
 								<tr>
 									<td><input type="text" class="text-field-box normal borderd smoke-white" placeholder="Job Title"></td>
@@ -301,7 +300,6 @@
                                         </select>
 									</td>
 									<td><input type="text" class="text-field-box normal borderd smoke-white" placeholder="Company Name"></td>
-									<td><a href="#"><i class="fa fa-refresh refresh"></i></a></td>
 								</tr>
 							</tbody>
 						</table>
@@ -309,8 +307,8 @@
 					</div>
 					<hr class="hr-jobs"/>
 					<h5>Skills/Expertise</h5>
-					<div class="table-responsive">
-						<table class="table">
+					<div class="table-responsive skills-table">
+						<table class="table EditableTable">
 							<thead>
 								<tr>
 									<th>Skills/Expertise</th>
@@ -324,16 +322,16 @@
 									<td>HTML5</td>
 									<td>Advanced</td>
 									<td>Company 01</td>
-									<td><a href="#" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit edit"></i></a><a href="#" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash delete"></i></a></td>
+									
 								</tr>
 								<tr>
 									<td>Adobe Illustrator</td>
 									<td>Intermediate</td>
 									<td>Company 04</td>
-									<td><a href="#" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit edit"></i></a><a href="#" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash delete"></i></a></td>
+									
 								</tr>
 								<tr>
-									<td><input type="text" class="text-field-box normal borderd smoke-white" placeholder="Skills/Expertise"></td>
+									<td><input id="hero-demo" type="text" name="q" placeholder="Skills/Expertise" class="text-field-box normal borderd smoke-white"></td>
 									<td>
 										<select  class="text-field-box normal borderd smoke-white">
                                             <option>Level of Experience</option>
@@ -344,16 +342,16 @@
                                         </select>
 									</td>
 									<td><input type="text" class="text-field-box normal borderd smoke-white" placeholder="Company Name"></td>
-									<td><a href="#"><i class="fa fa-refresh refresh"></i></a></td>
 								</tr>
 							</tbody>
 						</table>
-						<a href="#" class="button-submit">Add&nbsp;New&nbsp;&nbsp;+</a>
+						
 					</div>
+					<a href="#" class="button-submit">Add&nbsp;New&nbsp;&nbsp;+</a>
 					<hr class="hr-jobs"/>
 					<h5>Achievements</h5>
 					<div class="table-responsive">
-						<table class="table">
+						<table class="table EditableTable">
 							<thead>
 								<tr>
 									<th>Achievements</th>
@@ -367,7 +365,7 @@
 									<td>Best UI Developer</td>
 									<td>14 August 2015</td>
 									<td>Company 01</td>
-									<td><a href="#" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit edit"></i></a><a href="#" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash delete"></i></a></td>
+									
 								</tr>
 								<tr>
 									<td><input type="text" class="text-field-box normal borderd smoke-white" placeholder="Achievements/Award"></td>
@@ -375,7 +373,6 @@
 										<input  type="text"  class="text-field-box normal span2 borderd smoke-white" placeholder="Date Awarded" id="dp3">
 									</td>
 									<td><input type="text" class="text-field-box normal borderd smoke-white" placeholder="Company Name"></td>
-									<td><a href="#"><i class="fa fa-refresh refresh"></i></a></td>
 								</tr>
 							</tbody>
 						</table>
@@ -415,6 +412,11 @@
     <script type="text/javascript" src="js/animation.js" ></script><!-- Animation Js -->
     <script type="text/javascript" src="js/bootstrap-tagsinput.js" ></script><!-- Animation Js -->
 	<script type="text/javascript" src="js/bootstrap-datepicker.js" ></script><!-- Animation Js -->
+	<script src="js/jquery.auto-complete.js"></script>
+	<script src="js/bootstable.js"></script>
+	<script>
+ $('.EditableTable').SetEditable();
+</script>
 	<script type="text/javascript">
 	$(document).ready(function(){
 	$('#dp2').datepicker();
@@ -558,5 +560,23 @@
 
 $('input[type=file]').customFile();
 	</script>
+	
+	<script>
+        $(function(){
+            $('#hero-demo').autoComplete({
+                minChars: 1,
+                source: function(term, suggest){
+                    term = term.toLowerCase();
+                    var choices = ['ActionScript', 'AppleScript', 'Asp', 'Assembly', 'BASIC', 'Batch', 'C', 'C++', 'CSS', 'Clojure', 'COBOL', 'ColdFusion', 'Erlang', 'Fortran', 'Groovy', 'Haskell', 'HTML', 'Java', 'JavaScript', 'Lisp', 'Perl', 'PHP', 'PowerShell', 'Python', 'Ruby', 'Scala', 'Scheme', 'SQL', 'TeX', 'XML'];
+                    var suggestions = [];
+                    for (i=0;i<choices.length;i++)
+                        if (~choices[i].toLowerCase().indexOf(term)) suggestions.push(choices[i]);
+                    suggest(suggestions);
+                }
+            });
+            
+        });
+    </script>
+	
 </body>
 </html>
