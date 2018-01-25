@@ -2163,10 +2163,10 @@ textarea {background-color:#f8f8f8 !important;}
 }
 
 .file-upload-input {
-  width: 300px;
+  width: 160px;
   color: #fff;
   font-size: 14px;
-  padding: 6px 10px;
+  padding: 4px 10px;
   border: 1px solid #008cbb;
   background-color: #33ccff;
   -moz-transition: all 0.2s ease-in;
@@ -2187,9 +2187,9 @@ textarea {background-color:#f8f8f8 !important;}
   color: #fff;
   font-size: 14px;
   text-transform: uppercase;
-  padding: 7px 10px;
+  padding: 5px 10px;
   border: none;
-  margin-left: 15px;
+  margin-left: 0px;
   background-color: #33ccff;
   float: left;
   /* IE 9 Fix */
@@ -3051,3 +3051,37 @@ position: absolute; display: none; z-index: 9999; max-height: 254px; overflow: h
 .messagesgroup ul {padding-left:0px;}
 
 .groupname {font-size:12px; font-weight:600; padding:8px 5px; color:#fff; width:100%; background-color:#33ccff; }
+
+
+/* Guest User Page CSS */
+.guestuserlist {overflow:hidden; margin:40px 0; background-color:#f5f5f5; padding:15px;}
+.guestuserlist iframe {height:260px;}
+
+.guestuserlistcontent {overflow:hidden;}
+.guestcandidateinfo, .commentsection {overflow:hidden;}
+.likeanddislike {margin:10px 0;}
+.likeanddislike i {font-size:20px; margin-right:15px; color:#33ccff;}
+.likeanddislike i:hover {color:#07baf6;}
+
+.comments {overflow:hidden; margin-bottom:10px;}
+.comments .image{ border:1px solid #ccc; padding:5px; border-radius:4px; margin-right:10px;}
+.comments .comment {border:1px solid #ccc; padding:5px; border-radius:4px;}
+.comment span {font-size:12px;}
+.comment p {font-size:12px;}
+
+.deletecomment {overflow:hidden;}
+.deletecomment button {font-size: 16px;
+    background-color: transparent;
+    color: #33ccff;
+    margin-bottom: 4px;
+    margin-right: 5px;
+    margin-top: 4px;}
+
+.commentsection {margin:10px 0;}
+
+.addcomment button {font-size: 16px;
+    background-color: #33ccff;
+    color: #fff;
+    padding: 13px 17px; margin-left:2px;
+ }
+.commentsection textarea {width:100%; border:1px solid #ccc; float:left; min-height:30px !important; height:50px; padding:5px 15px; resize:none;}
